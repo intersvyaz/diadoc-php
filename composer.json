@@ -1,12 +1,12 @@
 {
-    "name": "magdv/diadoc-php",
+    "name": "intersvyaz/diadoc-php",
     "description": "Diadoc API implementation",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
-            "name": "Korolev Denis",
-            "email": "d.korolev@magdv.com"
+            "name": "Vassepov D/",
+            "email": "vassepov@intersvyaz.net"
         }
     ],
     "require": {
