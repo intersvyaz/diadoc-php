@@ -16,11 +16,11 @@ class LoginPassword extends \Google\Protobuf\Internal\Message
     /**
      * Generated from protobuf field <code>string Login = 1;</code>
      */
-    private $Login = '';
+    protected $Login = '';
     /**
      * Generated from protobuf field <code>string Password = 2;</code>
      */
-    private $Password = '';
+    protected $Password = '';
 
     /**
      * Constructor.

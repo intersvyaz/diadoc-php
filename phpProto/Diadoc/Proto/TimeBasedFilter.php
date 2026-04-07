@@ -16,15 +16,15 @@ class TimeBasedFilter extends \Google\Protobuf\Internal\Message
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Timestamp FromTimestamp = 1;</code>
      */
-    private $FromTimestamp = null;
+    protected $FromTimestamp = null;
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Timestamp ToTimestamp = 2;</code>
      */
-    private $ToTimestamp = null;
+    protected $ToTimestamp = null;
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.SortDirection SortDirection = 3;</code>
      */
-    private $SortDirection = 0;
+    protected $SortDirection = 0;
 
     /**
      * Constructor.
@@ -44,11 +44,21 @@ class TimeBasedFilter extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Timestamp FromTimestamp = 1;</code>
-     * @return \Diadoc\Proto\Timestamp
+     * @return \Diadoc\Proto\Timestamp|null
      */
     public function getFromTimestamp()
     {
         return $this->FromTimestamp;
+    }
+
+    public function hasFromTimestamp()
+    {
+        return isset($this->FromTimestamp);
+    }
+
+    public function clearFromTimestamp()
+    {
+        unset($this->FromTimestamp);
     }
 
     /**
@@ -66,11 +76,21 @@ class TimeBasedFilter extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Timestamp ToTimestamp = 2;</code>
-     * @return \Diadoc\Proto\Timestamp
+     * @return \Diadoc\Proto\Timestamp|null
      */
     public function getToTimestamp()
     {
         return $this->ToTimestamp;
+    }
+
+    public function hasToTimestamp()
+    {
+        return isset($this->ToTimestamp);
+    }
+
+    public function clearToTimestamp()
+    {
+        unset($this->ToTimestamp);
     }
 
     /**

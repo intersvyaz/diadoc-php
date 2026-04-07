@@ -16,11 +16,11 @@ class OrganizationWithCounteragentStatus extends \Google\Protobuf\Internal\Messa
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Organization Organization = 1;</code>
      */
-    private $Organization = null;
+    protected $Organization = null;
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.CounteragentStatus CounteragentStatus = 2;</code>
      */
-    private $CounteragentStatus = 0;
+    protected $CounteragentStatus = 0;
 
     /**
      * Constructor.
@@ -39,11 +39,21 @@ class OrganizationWithCounteragentStatus extends \Google\Protobuf\Internal\Messa
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Organization Organization = 1;</code>
-     * @return \Diadoc\Proto\Organization
+     * @return \Diadoc\Proto\Organization|null
      */
     public function getOrganization()
     {
         return $this->Organization;
+    }
+
+    public function hasOrganization()
+    {
+        return isset($this->Organization);
+    }
+
+    public function clearOrganization()
+    {
+        unset($this->Organization);
     }
 
     /**

@@ -16,15 +16,15 @@ class ForwardedDocument extends \Google\Protobuf\Internal\Message
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Timestamp ForwardTimestamp = 1;</code>
      */
-    private $ForwardTimestamp = null;
+    protected $ForwardTimestamp = null;
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Forwarding.ForwardedDocumentId ForwardedDocumentId = 2;</code>
      */
-    private $ForwardedDocumentId = null;
+    protected $ForwardedDocumentId = null;
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Docflow.DocumentWithDocflow DocumentWithDocflow = 3;</code>
      */
-    private $DocumentWithDocflow = null;
+    protected $DocumentWithDocflow = null;
 
     /**
      * Constructor.
@@ -44,11 +44,21 @@ class ForwardedDocument extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Timestamp ForwardTimestamp = 1;</code>
-     * @return \Diadoc\Proto\Timestamp
+     * @return \Diadoc\Proto\Timestamp|null
      */
     public function getForwardTimestamp()
     {
         return $this->ForwardTimestamp;
+    }
+
+    public function hasForwardTimestamp()
+    {
+        return isset($this->ForwardTimestamp);
+    }
+
+    public function clearForwardTimestamp()
+    {
+        unset($this->ForwardTimestamp);
     }
 
     /**
@@ -66,11 +76,21 @@ class ForwardedDocument extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Forwarding.ForwardedDocumentId ForwardedDocumentId = 2;</code>
-     * @return \Diadoc\Proto\Forwarding\ForwardedDocumentId
+     * @return \Diadoc\Proto\Forwarding\ForwardedDocumentId|null
      */
     public function getForwardedDocumentId()
     {
         return $this->ForwardedDocumentId;
+    }
+
+    public function hasForwardedDocumentId()
+    {
+        return isset($this->ForwardedDocumentId);
+    }
+
+    public function clearForwardedDocumentId()
+    {
+        unset($this->ForwardedDocumentId);
     }
 
     /**
@@ -88,11 +108,21 @@ class ForwardedDocument extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Docflow.DocumentWithDocflow DocumentWithDocflow = 3;</code>
-     * @return \Diadoc\Proto\Docflow\DocumentWithDocflow
+     * @return \Diadoc\Proto\Docflow\DocumentWithDocflow|null
      */
     public function getDocumentWithDocflow()
     {
         return $this->DocumentWithDocflow;
+    }
+
+    public function hasDocumentWithDocflow()
+    {
+        return isset($this->DocumentWithDocflow);
+    }
+
+    public function clearDocumentWithDocflow()
+    {
+        unset($this->DocumentWithDocflow);
     }
 
     /**

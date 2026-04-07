@@ -14,13 +14,16 @@ class CertificateInfo
         if (static::$is_initialized == true) {
           return;
         }
-        $pool->internalAddGeneratedFile(hex2bin(
-            "0a780a154365727469666963617465496e666f2e70726f746f120c446961" .
-            "646f632e50726f746f22490a0f4365727469666963617465496e666f1212" .
-            "0a0a5468756d627072696e7418012001280912110a0956616c696446726f" .
-            "6d180220012810120f0a0756616c6964546f180320012810620670726f74" .
-            "6f33"
-        ));
+        $pool->internalAddGeneratedFile(
+            '
+x
+CertificateInfo.protoDiadoc.Proto"I
+CertificateInfo
+
+Thumbprint (	
+	ValidFrom (
+ValidTo (bproto3'
+        , true);
 
         static::$is_initialized = true;
     }

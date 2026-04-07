@@ -16,11 +16,11 @@ class RevocationRequestInfo extends \Google\Protobuf\Internal\Message
     /**
      * Generated from protobuf field <code>string Comment = 1;</code>
      */
-    private $Comment = '';
+    protected $Comment = '';
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Invoicing.Signer Signer = 2;</code>
      */
-    private $Signer = null;
+    protected $Signer = null;
 
     /**
      * Constructor.
@@ -61,11 +61,21 @@ class RevocationRequestInfo extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Invoicing.Signer Signer = 2;</code>
-     * @return \Diadoc\Proto\Invoicing\Signer
+     * @return \Diadoc\Proto\Invoicing\Signer|null
      */
     public function getSigner()
     {
         return $this->Signer;
+    }
+
+    public function hasSigner()
+    {
+        return isset($this->Signer);
+    }
+
+    public function clearSigner()
+    {
+        unset($this->Signer);
     }
 
     /**

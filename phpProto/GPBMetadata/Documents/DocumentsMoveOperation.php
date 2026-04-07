@@ -15,15 +15,15 @@ class DocumentsMoveOperation
           return;
         }
         \GPBMetadata\DocumentId::initOnce();
-        $pool->internalAddGeneratedFile(hex2bin(
-            "0ab8010a26446f63756d656e74732f446f63756d656e74734d6f76654f70" .
-            "65726174696f6e2e70726f746f1216446961646f632e50726f746f2e446f" .
-            "63756d656e7473226e0a16446f63756d656e74734d6f76654f7065726174" .
-            "696f6e120d0a05426f78496418012001280912160a0e546f446570617274" .
-            "6d656e744964180220012809122d0a0b446f63756d656e74496473180320" .
-            "03280b32182e446961646f632e50726f746f2e446f63756d656e74496462" .
-            "0670726f746f33"
-        ));
+        $pool->internalAddGeneratedFile(
+            '
+¸
+&Documents/DocumentsMoveOperation.protoDiadoc.Proto.Documents"n
+DocumentsMoveOperation
+BoxId (	
+ToDepartmentId (	-
+DocumentIds (2.Diadoc.Proto.DocumentIdbproto3'
+        , true);
 
         static::$is_initialized = true;
     }

@@ -16,11 +16,11 @@ class ForwardDocumentEvent extends \Google\Protobuf\Internal\Message
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Timestamp Timestamp = 1;</code>
      */
-    private $Timestamp = null;
+    protected $Timestamp = null;
     /**
      * Generated from protobuf field <code>string ToBoxId = 2;</code>
      */
-    private $ToBoxId = '';
+    protected $ToBoxId = '';
 
     /**
      * Constructor.
@@ -39,11 +39,21 @@ class ForwardDocumentEvent extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Timestamp Timestamp = 1;</code>
-     * @return \Diadoc\Proto\Timestamp
+     * @return \Diadoc\Proto\Timestamp|null
      */
     public function getTimestamp()
     {
         return $this->Timestamp;
+    }
+
+    public function hasTimestamp()
+    {
+        return isset($this->Timestamp);
+    }
+
+    public function clearTimestamp()
+    {
+        unset($this->Timestamp);
     }
 
     /**

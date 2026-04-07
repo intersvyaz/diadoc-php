@@ -16,35 +16,35 @@ class InboundInvoiceDocflow extends \Google\Protobuf\Internal\Message
     /**
      * Generated from protobuf field <code>bool IsFinished = 1;</code>
      */
-    private $IsFinished = false;
+    protected $IsFinished = false;
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Docflow.InboundInvoiceReceiptDocflow ReceiptDocflow = 2;</code>
      */
-    private $ReceiptDocflow = null;
+    protected $ReceiptDocflow = null;
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Docflow.InvoiceConfirmationDocflow ConfirmationDocflow = 3;</code>
      */
-    private $ConfirmationDocflow = null;
+    protected $ConfirmationDocflow = null;
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Docflow.InvoiceCorrectionRequestDocflow CorrectionRequestDocflow = 4;</code>
      */
-    private $CorrectionRequestDocflow = null;
+    protected $CorrectionRequestDocflow = null;
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Timestamp ConfirmationTimestamp = 5;</code>
      */
-    private $ConfirmationTimestamp = null;
+    protected $ConfirmationTimestamp = null;
     /**
      * Generated from protobuf field <code>bool IsAmendmentRequested = 6;</code>
      */
-    private $IsAmendmentRequested = false;
+    protected $IsAmendmentRequested = false;
     /**
      * Generated from protobuf field <code>bool IsRevised = 7;</code>
      */
-    private $IsRevised = false;
+    protected $IsRevised = false;
     /**
      * Generated from protobuf field <code>bool IsCorrected = 8;</code>
      */
-    private $IsCorrected = false;
+    protected $IsCorrected = false;
 
     /**
      * Constructor.
@@ -91,11 +91,21 @@ class InboundInvoiceDocflow extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Docflow.InboundInvoiceReceiptDocflow ReceiptDocflow = 2;</code>
-     * @return \Diadoc\Proto\Docflow\InboundInvoiceReceiptDocflow
+     * @return \Diadoc\Proto\Docflow\InboundInvoiceReceiptDocflow|null
      */
     public function getReceiptDocflow()
     {
         return $this->ReceiptDocflow;
+    }
+
+    public function hasReceiptDocflow()
+    {
+        return isset($this->ReceiptDocflow);
+    }
+
+    public function clearReceiptDocflow()
+    {
+        unset($this->ReceiptDocflow);
     }
 
     /**
@@ -113,11 +123,21 @@ class InboundInvoiceDocflow extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Docflow.InvoiceConfirmationDocflow ConfirmationDocflow = 3;</code>
-     * @return \Diadoc\Proto\Docflow\InvoiceConfirmationDocflow
+     * @return \Diadoc\Proto\Docflow\InvoiceConfirmationDocflow|null
      */
     public function getConfirmationDocflow()
     {
         return $this->ConfirmationDocflow;
+    }
+
+    public function hasConfirmationDocflow()
+    {
+        return isset($this->ConfirmationDocflow);
+    }
+
+    public function clearConfirmationDocflow()
+    {
+        unset($this->ConfirmationDocflow);
     }
 
     /**
@@ -135,11 +155,21 @@ class InboundInvoiceDocflow extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Docflow.InvoiceCorrectionRequestDocflow CorrectionRequestDocflow = 4;</code>
-     * @return \Diadoc\Proto\Docflow\InvoiceCorrectionRequestDocflow
+     * @return \Diadoc\Proto\Docflow\InvoiceCorrectionRequestDocflow|null
      */
     public function getCorrectionRequestDocflow()
     {
         return $this->CorrectionRequestDocflow;
+    }
+
+    public function hasCorrectionRequestDocflow()
+    {
+        return isset($this->CorrectionRequestDocflow);
+    }
+
+    public function clearCorrectionRequestDocflow()
+    {
+        unset($this->CorrectionRequestDocflow);
     }
 
     /**
@@ -157,11 +187,21 @@ class InboundInvoiceDocflow extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Timestamp ConfirmationTimestamp = 5;</code>
-     * @return \Diadoc\Proto\Timestamp
+     * @return \Diadoc\Proto\Timestamp|null
      */
     public function getConfirmationTimestamp()
     {
         return $this->ConfirmationTimestamp;
+    }
+
+    public function hasConfirmationTimestamp()
+    {
+        return isset($this->ConfirmationTimestamp);
+    }
+
+    public function clearConfirmationTimestamp()
+    {
+        unset($this->ConfirmationTimestamp);
     }
 
     /**

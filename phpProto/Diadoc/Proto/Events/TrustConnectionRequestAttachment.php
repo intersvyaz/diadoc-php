@@ -16,19 +16,19 @@ class TrustConnectionRequestAttachment extends \Google\Protobuf\Internal\Message
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Events.SignedContent SignedContent = 1;</code>
      */
-    private $SignedContent = null;
+    protected $SignedContent = null;
     /**
      * Generated from protobuf field <code>string FileName = 2;</code>
      */
-    private $FileName = '';
+    protected $FileName = '';
     /**
      * Generated from protobuf field <code>string Comment = 3;</code>
      */
-    private $Comment = '';
+    protected $Comment = '';
     /**
      * Generated from protobuf field <code>string CustomDocumentId = 4;</code>
      */
-    private $CustomDocumentId = '';
+    protected $CustomDocumentId = '';
     /**
      * Generated from protobuf field <code>repeated .Diadoc.Proto.CustomDataItem CustomData = 5;</code>
      */
@@ -54,11 +54,21 @@ class TrustConnectionRequestAttachment extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Events.SignedContent SignedContent = 1;</code>
-     * @return \Diadoc\Proto\Events\SignedContent
+     * @return \Diadoc\Proto\Events\SignedContent|null
      */
     public function getSignedContent()
     {
         return $this->SignedContent;
+    }
+
+    public function hasSignedContent()
+    {
+        return isset($this->SignedContent);
+    }
+
+    public function clearSignedContent()
+    {
+        unset($this->SignedContent);
     }
 
     /**

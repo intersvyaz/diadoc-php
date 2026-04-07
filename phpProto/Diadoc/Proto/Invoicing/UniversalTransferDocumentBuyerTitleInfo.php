@@ -18,49 +18,49 @@ class UniversalTransferDocumentBuyerTitleInfo extends \Google\Protobuf\Internal\
      *
      * Generated from protobuf field <code>string DocumentCreator = 1;</code>
      */
-    private $DocumentCreator = '';
+    protected $DocumentCreator = '';
     /**
      * ОснДоверОргСост - Основание, по которому экономический субъект является составителем файла обмена информации покупателя
      *
      * Generated from protobuf field <code>string DocumentCreatorBase = 2;</code>
      */
-    private $DocumentCreatorBase = '';
+    protected $DocumentCreatorBase = '';
     /**
      * ВидОперации - ВидОперации
      *
      * Generated from protobuf field <code>string OperationCode = 3;</code>
      */
-    private $OperationCode = '';
+    protected $OperationCode = '';
     /**
      * СодОпер - Содержание операции
      *
      * Generated from protobuf field <code>string OperationContent = 4;</code>
      */
-    private $OperationContent = '';
+    protected $OperationContent = '';
     /**
      * ДатаПрин - Дата принятия товаров (результатов выполненных работ), имущественных прав (подтверждения факта оказания услуг)
      *
      * Generated from protobuf field <code>string AcceptanceDate = 5;</code>
      */
-    private $AcceptanceDate = '';
+    protected $AcceptanceDate = '';
     /**
      * РабОргПок - работник организации покупателя
      *
      * Generated from protobuf field <code>.Diadoc.Proto.Invoicing.Employee Employee = 6;</code>
      */
-    private $Employee = null;
+    protected $Employee = null;
     /**
      * ИнЛицо - Иное Лицо
      *
      * Generated from protobuf field <code>.Diadoc.Proto.Invoicing.OtherIssuer OtherIssuer = 7;</code>
      */
-    private $OtherIssuer = null;
+    protected $OtherIssuer = null;
     /**
      * ИнфПолФХЖ4
      *
      * Generated from protobuf field <code>.Diadoc.Proto.Invoicing.AdditionalInfoId AdditionalInfoId = 8;</code>
      */
-    private $AdditionalInfoId = null;
+    protected $AdditionalInfoId = null;
     /**
      * Подписант
      *
@@ -233,11 +233,21 @@ class UniversalTransferDocumentBuyerTitleInfo extends \Google\Protobuf\Internal\
      * РабОргПок - работник организации покупателя
      *
      * Generated from protobuf field <code>.Diadoc.Proto.Invoicing.Employee Employee = 6;</code>
-     * @return \Diadoc\Proto\Invoicing\Employee
+     * @return \Diadoc\Proto\Invoicing\Employee|null
      */
     public function getEmployee()
     {
         return $this->Employee;
+    }
+
+    public function hasEmployee()
+    {
+        return isset($this->Employee);
+    }
+
+    public function clearEmployee()
+    {
+        unset($this->Employee);
     }
 
     /**
@@ -259,11 +269,21 @@ class UniversalTransferDocumentBuyerTitleInfo extends \Google\Protobuf\Internal\
      * ИнЛицо - Иное Лицо
      *
      * Generated from protobuf field <code>.Diadoc.Proto.Invoicing.OtherIssuer OtherIssuer = 7;</code>
-     * @return \Diadoc\Proto\Invoicing\OtherIssuer
+     * @return \Diadoc\Proto\Invoicing\OtherIssuer|null
      */
     public function getOtherIssuer()
     {
         return $this->OtherIssuer;
+    }
+
+    public function hasOtherIssuer()
+    {
+        return isset($this->OtherIssuer);
+    }
+
+    public function clearOtherIssuer()
+    {
+        unset($this->OtherIssuer);
     }
 
     /**
@@ -285,11 +305,21 @@ class UniversalTransferDocumentBuyerTitleInfo extends \Google\Protobuf\Internal\
      * ИнфПолФХЖ4
      *
      * Generated from protobuf field <code>.Diadoc.Proto.Invoicing.AdditionalInfoId AdditionalInfoId = 8;</code>
-     * @return \Diadoc\Proto\Invoicing\AdditionalInfoId
+     * @return \Diadoc\Proto\Invoicing\AdditionalInfoId|null
      */
     public function getAdditionalInfoId()
     {
         return $this->AdditionalInfoId;
+    }
+
+    public function hasAdditionalInfoId()
+    {
+        return isset($this->AdditionalInfoId);
+    }
+
+    public function clearAdditionalInfoId()
+    {
+        unset($this->AdditionalInfoId);
     }
 
     /**

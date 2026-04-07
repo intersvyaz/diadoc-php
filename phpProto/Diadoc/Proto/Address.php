@@ -16,15 +16,15 @@ class Address extends \Google\Protobuf\Internal\Message
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.RussianAddress RussianAddress = 1;</code>
      */
-    private $RussianAddress = null;
+    protected $RussianAddress = null;
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.ForeignAddress ForeignAddress = 2;</code>
      */
-    private $ForeignAddress = null;
+    protected $ForeignAddress = null;
     /**
      * Generated from protobuf field <code>string AddressCode = 3;</code>
      */
-    private $AddressCode = '';
+    protected $AddressCode = '';
 
     /**
      * Constructor.
@@ -44,11 +44,21 @@ class Address extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.RussianAddress RussianAddress = 1;</code>
-     * @return \Diadoc\Proto\RussianAddress
+     * @return \Diadoc\Proto\RussianAddress|null
      */
     public function getRussianAddress()
     {
         return $this->RussianAddress;
+    }
+
+    public function hasRussianAddress()
+    {
+        return isset($this->RussianAddress);
+    }
+
+    public function clearRussianAddress()
+    {
+        unset($this->RussianAddress);
     }
 
     /**
@@ -66,11 +76,21 @@ class Address extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.ForeignAddress ForeignAddress = 2;</code>
-     * @return \Diadoc\Proto\ForeignAddress
+     * @return \Diadoc\Proto\ForeignAddress|null
      */
     public function getForeignAddress()
     {
         return $this->ForeignAddress;
+    }
+
+    public function hasForeignAddress()
+    {
+        return isset($this->ForeignAddress);
+    }
+
+    public function clearForeignAddress()
+    {
+        unset($this->ForeignAddress);
     }
 
     /**

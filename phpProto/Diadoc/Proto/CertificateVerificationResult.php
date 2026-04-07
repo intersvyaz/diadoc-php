@@ -16,7 +16,7 @@ class CertificateVerificationResult extends \Google\Protobuf\Internal\Message
     /**
      * Generated from protobuf field <code>bool IsValid = 2;</code>
      */
-    private $IsValid = false;
+    protected $IsValid = false;
     /**
      * first element corresponds to signer certificate
      *
@@ -26,7 +26,7 @@ class CertificateVerificationResult extends \Google\Protobuf\Internal\Message
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Timestamp VerificationTime = 4;</code>
      */
-    private $VerificationTime = null;
+    protected $VerificationTime = null;
 
     /**
      * Constructor.
@@ -95,11 +95,21 @@ class CertificateVerificationResult extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Timestamp VerificationTime = 4;</code>
-     * @return \Diadoc\Proto\Timestamp
+     * @return \Diadoc\Proto\Timestamp|null
      */
     public function getVerificationTime()
     {
         return $this->VerificationTime;
+    }
+
+    public function hasVerificationTime()
+    {
+        return isset($this->VerificationTime);
+    }
+
+    public function clearVerificationTime()
+    {
+        unset($this->VerificationTime);
     }
 
     /**

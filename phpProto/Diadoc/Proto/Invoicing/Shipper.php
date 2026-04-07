@@ -18,13 +18,13 @@ class Shipper extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bool SameAsSeller = 1;</code>
      */
-    private $SameAsSeller = false;
+    protected $SameAsSeller = false;
     /**
      * реквизиты организации // ГрузОтпр
      *
      * Generated from protobuf field <code>.Diadoc.Proto.Invoicing.Organizations.ExtendedOrganizationInfo OrgInfo = 2;</code>
      */
-    private $OrgInfo = null;
+    protected $OrgInfo = null;
 
     /**
      * Constructor.
@@ -73,11 +73,21 @@ class Shipper extends \Google\Protobuf\Internal\Message
      * реквизиты организации // ГрузОтпр
      *
      * Generated from protobuf field <code>.Diadoc.Proto.Invoicing.Organizations.ExtendedOrganizationInfo OrgInfo = 2;</code>
-     * @return \Diadoc\Proto\Invoicing\Organizations\ExtendedOrganizationInfo
+     * @return \Diadoc\Proto\Invoicing\Organizations\ExtendedOrganizationInfo|null
      */
     public function getOrgInfo()
     {
         return $this->OrgInfo;
+    }
+
+    public function hasOrgInfo()
+    {
+        return isset($this->OrgInfo);
+    }
+
+    public function clearOrgInfo()
+    {
+        unset($this->OrgInfo);
     }
 
     /**

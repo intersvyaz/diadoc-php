@@ -16,27 +16,27 @@ class Counteragent extends \Google\Protobuf\Internal\Message
     /**
      * Generated from protobuf field <code>string IndexKey = 1;</code>
      */
-    private $IndexKey = '';
+    protected $IndexKey = '';
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Organization Organization = 2;</code>
      */
-    private $Organization = null;
+    protected $Organization = null;
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.CounteragentStatus CurrentStatus = 3;</code>
      */
-    private $CurrentStatus = 0;
+    protected $CurrentStatus = 0;
     /**
      * Generated from protobuf field <code>sfixed64 LastEventTimestampTicks = 4;</code>
      */
-    private $LastEventTimestampTicks = 0;
+    protected $LastEventTimestampTicks = 0;
     /**
      * Generated from protobuf field <code>string MessageFromCounteragent = 6;</code>
      */
-    private $MessageFromCounteragent = '';
+    protected $MessageFromCounteragent = '';
     /**
      * Generated from protobuf field <code>string MessageToCounteragent = 7;</code>
      */
-    private $MessageToCounteragent = '';
+    protected $MessageToCounteragent = '';
 
     /**
      * Constructor.
@@ -81,11 +81,21 @@ class Counteragent extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Organization Organization = 2;</code>
-     * @return \Diadoc\Proto\Organization
+     * @return \Diadoc\Proto\Organization|null
      */
     public function getOrganization()
     {
         return $this->Organization;
+    }
+
+    public function hasOrganization()
+    {
+        return isset($this->Organization);
+    }
+
+    public function clearOrganization()
+    {
+        unset($this->Organization);
     }
 
     /**

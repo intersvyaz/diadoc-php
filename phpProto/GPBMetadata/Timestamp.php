@@ -14,11 +14,13 @@ class Timestamp
         if (static::$is_initialized == true) {
           return;
         }
-        $pool->internalAddGeneratedFile(hex2bin(
-            "0a430a0f54696d657374616d702e70726f746f120c446961646f632e5072" .
-            "6f746f221a0a0954696d657374616d70120d0a055469636b731801200128" .
-            "10620670726f746f33"
-        ));
+        $pool->internalAddGeneratedFile(
+            '
+C
+Timestamp.protoDiadoc.Proto"
+	Timestamp
+Ticks (bproto3'
+        , true);
 
         static::$is_initialized = true;
     }

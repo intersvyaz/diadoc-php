@@ -14,13 +14,15 @@ class ExternalServiceAuthInfo
         if (static::$is_initialized == true) {
           return;
         }
-        $pool->internalAddGeneratedFile(hex2bin(
-            "0a7b0a1d45787465726e616c5365727669636541757468496e666f2e7072" .
-            "6f746f120c446961646f632e50726f746f22440a1745787465726e616c53" .
-            "65727669636541757468496e666f12150a0d536572766963655573657249" .
-            "6418012001280912120a0a5468756d627072696e74180220012809620670" .
-            "726f746f33"
-        ));
+        $pool->internalAddGeneratedFile(
+            '
+{
+ExternalServiceAuthInfo.protoDiadoc.Proto"D
+ExternalServiceAuthInfo
+ServiceUserId (	
+
+Thumbprint (	bproto3'
+        , true);
 
         static::$is_initialized = true;
     }

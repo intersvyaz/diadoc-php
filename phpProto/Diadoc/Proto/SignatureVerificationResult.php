@@ -16,15 +16,15 @@ class SignatureVerificationResult extends \Google\Protobuf\Internal\Message
     /**
      * Generated from protobuf field <code>bool IsValid = 1;</code>
      */
-    private $IsValid = false;
+    protected $IsValid = false;
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.CertificateVerificationResult CertificateStatus = 2;</code>
      */
-    private $CertificateStatus = null;
+    protected $CertificateStatus = null;
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Timestamp SignatureTimestamp = 3;</code>
      */
-    private $SignatureTimestamp = null;
+    protected $SignatureTimestamp = null;
 
     /**
      * Constructor.
@@ -66,11 +66,21 @@ class SignatureVerificationResult extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.CertificateVerificationResult CertificateStatus = 2;</code>
-     * @return \Diadoc\Proto\CertificateVerificationResult
+     * @return \Diadoc\Proto\CertificateVerificationResult|null
      */
     public function getCertificateStatus()
     {
         return $this->CertificateStatus;
+    }
+
+    public function hasCertificateStatus()
+    {
+        return isset($this->CertificateStatus);
+    }
+
+    public function clearCertificateStatus()
+    {
+        unset($this->CertificateStatus);
     }
 
     /**
@@ -88,11 +98,21 @@ class SignatureVerificationResult extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Timestamp SignatureTimestamp = 3;</code>
-     * @return \Diadoc\Proto\Timestamp
+     * @return \Diadoc\Proto\Timestamp|null
      */
     public function getSignatureTimestamp()
     {
         return $this->SignatureTimestamp;
+    }
+
+    public function hasSignatureTimestamp()
+    {
+        return isset($this->SignatureTimestamp);
+    }
+
+    public function clearSignatureTimestamp()
+    {
+        unset($this->SignatureTimestamp);
     }
 
     /**

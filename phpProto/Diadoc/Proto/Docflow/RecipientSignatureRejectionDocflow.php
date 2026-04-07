@@ -16,15 +16,15 @@ class RecipientSignatureRejectionDocflow extends \Google\Protobuf\Internal\Messa
     /**
      * Generated from protobuf field <code>bool IsFinished = 1;</code>
      */
-    private $IsFinished = false;
+    protected $IsFinished = false;
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Docflow.SignedAttachment RecipientSignatureRejectionAttachment = 2;</code>
      */
-    private $RecipientSignatureRejectionAttachment = null;
+    protected $RecipientSignatureRejectionAttachment = null;
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Timestamp DeliveryTimestamp = 3;</code>
      */
-    private $DeliveryTimestamp = null;
+    protected $DeliveryTimestamp = null;
 
     /**
      * Constructor.
@@ -66,11 +66,21 @@ class RecipientSignatureRejectionDocflow extends \Google\Protobuf\Internal\Messa
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Docflow.SignedAttachment RecipientSignatureRejectionAttachment = 2;</code>
-     * @return \Diadoc\Proto\Docflow\SignedAttachment
+     * @return \Diadoc\Proto\Docflow\SignedAttachment|null
      */
     public function getRecipientSignatureRejectionAttachment()
     {
         return $this->RecipientSignatureRejectionAttachment;
+    }
+
+    public function hasRecipientSignatureRejectionAttachment()
+    {
+        return isset($this->RecipientSignatureRejectionAttachment);
+    }
+
+    public function clearRecipientSignatureRejectionAttachment()
+    {
+        unset($this->RecipientSignatureRejectionAttachment);
     }
 
     /**
@@ -88,11 +98,21 @@ class RecipientSignatureRejectionDocflow extends \Google\Protobuf\Internal\Messa
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Timestamp DeliveryTimestamp = 3;</code>
-     * @return \Diadoc\Proto\Timestamp
+     * @return \Diadoc\Proto\Timestamp|null
      */
     public function getDeliveryTimestamp()
     {
         return $this->DeliveryTimestamp;
+    }
+
+    public function hasDeliveryTimestamp()
+    {
+        return isset($this->DeliveryTimestamp);
+    }
+
+    public function clearDeliveryTimestamp()
+    {
+        unset($this->DeliveryTimestamp);
     }
 
     /**

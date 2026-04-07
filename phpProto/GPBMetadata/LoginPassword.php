@@ -14,12 +14,14 @@ class LoginPassword
         if (static::$is_initialized == true) {
           return;
         }
-        $pool->internalAddGeneratedFile(hex2bin(
-            "0a5d0a134c6f67696e50617373776f72642e70726f746f120c446961646f" .
-            "632e50726f746f22300a0d4c6f67696e50617373776f7264120d0a054c6f" .
-            "67696e18012001280912100a0850617373776f7264180220012809620670" .
-            "726f746f33"
-        ));
+        $pool->internalAddGeneratedFile(
+            '
+]
+LoginPassword.protoDiadoc.Proto"0
+LoginPassword
+Login (	
+Password (	bproto3'
+        , true);
 
         static::$is_initialized = true;
     }

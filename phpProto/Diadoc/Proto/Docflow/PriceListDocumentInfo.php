@@ -16,11 +16,11 @@ class PriceListDocumentInfo extends \Google\Protobuf\Internal\Message
     /**
      * Generated from protobuf field <code>string PriceListEffectiveDate = 1;</code>
      */
-    private $PriceListEffectiveDate = '';
+    protected $PriceListEffectiveDate = '';
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Docflow.DocumentDateAndNumber ContractDocumentDateAndNumber = 2;</code>
      */
-    private $ContractDocumentDateAndNumber = null;
+    protected $ContractDocumentDateAndNumber = null;
 
     /**
      * Constructor.
@@ -61,11 +61,21 @@ class PriceListDocumentInfo extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Docflow.DocumentDateAndNumber ContractDocumentDateAndNumber = 2;</code>
-     * @return \Diadoc\Proto\Docflow\DocumentDateAndNumber
+     * @return \Diadoc\Proto\Docflow\DocumentDateAndNumber|null
      */
     public function getContractDocumentDateAndNumber()
     {
         return $this->ContractDocumentDateAndNumber;
+    }
+
+    public function hasContractDocumentDateAndNumber()
+    {
+        return isset($this->ContractDocumentDateAndNumber);
+    }
+
+    public function clearContractDocumentDateAndNumber()
+    {
+        unset($this->ContractDocumentDateAndNumber);
     }
 
     /**

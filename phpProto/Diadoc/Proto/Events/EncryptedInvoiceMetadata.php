@@ -16,7 +16,7 @@ class EncryptedInvoiceMetadata extends \Google\Protobuf\Internal\Message
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Docflow.DocumentDateAndNumber RevisionDateAndNumber = 1;</code>
      */
-    private $RevisionDateAndNumber = null;
+    protected $RevisionDateAndNumber = null;
 
     /**
      * Constructor.
@@ -34,11 +34,21 @@ class EncryptedInvoiceMetadata extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Docflow.DocumentDateAndNumber RevisionDateAndNumber = 1;</code>
-     * @return \Diadoc\Proto\Docflow\DocumentDateAndNumber
+     * @return \Diadoc\Proto\Docflow\DocumentDateAndNumber|null
      */
     public function getRevisionDateAndNumber()
     {
         return $this->RevisionDateAndNumber;
+    }
+
+    public function hasRevisionDateAndNumber()
+    {
+        return isset($this->RevisionDateAndNumber);
+    }
+
+    public function clearRevisionDateAndNumber()
+    {
+        unset($this->RevisionDateAndNumber);
     }
 
     /**

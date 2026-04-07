@@ -14,13 +14,13 @@ class FnsRegistrationMessageInfo
         if (static::$is_initialized == true) {
           return;
         }
-        $pool->internalAddGeneratedFile(hex2bin(
-            "0a80010a2a496e766f6963696e672f466e73526567697374726174696f6e" .
-            "4d657373616765496e666f2e70726f746f1216446961646f632e50726f74" .
-            "6f2e496e766f6963696e6722320a1a466e73526567697374726174696f6e" .
-            "4d657373616765496e666f12140a0c436572746966696361746573180120" .
-            "03280c620670726f746f33"
-        ));
+        $pool->internalAddGeneratedFile(
+            '
+€
+*Invoicing/FnsRegistrationMessageInfo.protoDiadoc.Proto.Invoicing"2
+FnsRegistrationMessageInfo
+Certificates (bproto3'
+        , true);
 
         static::$is_initialized = true;
     }

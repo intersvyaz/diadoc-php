@@ -16,19 +16,19 @@ class InvitationDocument extends \Google\Protobuf\Internal\Message
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Events.SignedContent SignedContent = 1;</code>
      */
-    private $SignedContent = null;
+    protected $SignedContent = null;
     /**
      * Generated from protobuf field <code>string FileName = 2;</code>
      */
-    private $FileName = '';
+    protected $FileName = '';
     /**
      * Generated from protobuf field <code>bool SignatureRequested = 3;</code>
      */
-    private $SignatureRequested = false;
+    protected $SignatureRequested = false;
     /**
      * Generated from protobuf field <code>string Type = 4;</code>
      */
-    private $Type = '';
+    protected $Type = '';
 
     /**
      * Constructor.
@@ -49,11 +49,21 @@ class InvitationDocument extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Events.SignedContent SignedContent = 1;</code>
-     * @return \Diadoc\Proto\Events\SignedContent
+     * @return \Diadoc\Proto\Events\SignedContent|null
      */
     public function getSignedContent()
     {
         return $this->SignedContent;
+    }
+
+    public function hasSignedContent()
+    {
+        return isset($this->SignedContent);
+    }
+
+    public function clearSignedContent()
+    {
+        unset($this->SignedContent);
     }
 
     /**

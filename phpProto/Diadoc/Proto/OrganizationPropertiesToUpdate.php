@@ -16,23 +16,23 @@ class OrganizationPropertiesToUpdate extends \Google\Protobuf\Internal\Message
     /**
      * Generated from protobuf field <code>string OrgId = 1;</code>
      */
-    private $OrgId = '';
+    protected $OrgId = '';
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.StringValue Ogrn = 2;</code>
      */
-    private $Ogrn = null;
+    protected $Ogrn = null;
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.StringValue IfnsCode = 3;</code>
      */
-    private $IfnsCode = null;
+    protected $IfnsCode = null;
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Address Address = 4;</code>
      */
-    private $Address = null;
+    protected $Address = null;
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.HeadOrganizationPropertiesToUpdate HeadOrganizationProperties = 5;</code>
      */
-    private $HeadOrganizationProperties = null;
+    protected $HeadOrganizationProperties = null;
 
     /**
      * Constructor.
@@ -76,11 +76,21 @@ class OrganizationPropertiesToUpdate extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.StringValue Ogrn = 2;</code>
-     * @return \Diadoc\Proto\StringValue
+     * @return \Diadoc\Proto\StringValue|null
      */
     public function getOgrn()
     {
         return $this->Ogrn;
+    }
+
+    public function hasOgrn()
+    {
+        return isset($this->Ogrn);
+    }
+
+    public function clearOgrn()
+    {
+        unset($this->Ogrn);
     }
 
     /**
@@ -98,11 +108,21 @@ class OrganizationPropertiesToUpdate extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.StringValue IfnsCode = 3;</code>
-     * @return \Diadoc\Proto\StringValue
+     * @return \Diadoc\Proto\StringValue|null
      */
     public function getIfnsCode()
     {
         return $this->IfnsCode;
+    }
+
+    public function hasIfnsCode()
+    {
+        return isset($this->IfnsCode);
+    }
+
+    public function clearIfnsCode()
+    {
+        unset($this->IfnsCode);
     }
 
     /**
@@ -120,11 +140,21 @@ class OrganizationPropertiesToUpdate extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Address Address = 4;</code>
-     * @return \Diadoc\Proto\Address
+     * @return \Diadoc\Proto\Address|null
      */
     public function getAddress()
     {
         return $this->Address;
+    }
+
+    public function hasAddress()
+    {
+        return isset($this->Address);
+    }
+
+    public function clearAddress()
+    {
+        unset($this->Address);
     }
 
     /**
@@ -142,11 +172,21 @@ class OrganizationPropertiesToUpdate extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.HeadOrganizationPropertiesToUpdate HeadOrganizationProperties = 5;</code>
-     * @return \Diadoc\Proto\HeadOrganizationPropertiesToUpdate
+     * @return \Diadoc\Proto\HeadOrganizationPropertiesToUpdate|null
      */
     public function getHeadOrganizationProperties()
     {
         return $this->HeadOrganizationProperties;
+    }
+
+    public function hasHeadOrganizationProperties()
+    {
+        return isset($this->HeadOrganizationProperties);
+    }
+
+    public function clearHeadOrganizationProperties()
+    {
+        unset($this->HeadOrganizationProperties);
     }
 
     /**

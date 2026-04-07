@@ -16,15 +16,15 @@ class InvoiceConfirmationDocflow extends \Google\Protobuf\Internal\Message
     /**
      * Generated from protobuf field <code>bool IsFinished = 1;</code>
      */
-    private $IsFinished = false;
+    protected $IsFinished = false;
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Docflow.SignedAttachment ConfirmationAttachment = 2;</code>
      */
-    private $ConfirmationAttachment = null;
+    protected $ConfirmationAttachment = null;
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Docflow.ReceiptDocflow ReceiptDocflow = 3;</code>
      */
-    private $ReceiptDocflow = null;
+    protected $ReceiptDocflow = null;
 
     /**
      * Constructor.
@@ -66,11 +66,21 @@ class InvoiceConfirmationDocflow extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Docflow.SignedAttachment ConfirmationAttachment = 2;</code>
-     * @return \Diadoc\Proto\Docflow\SignedAttachment
+     * @return \Diadoc\Proto\Docflow\SignedAttachment|null
      */
     public function getConfirmationAttachment()
     {
         return $this->ConfirmationAttachment;
+    }
+
+    public function hasConfirmationAttachment()
+    {
+        return isset($this->ConfirmationAttachment);
+    }
+
+    public function clearConfirmationAttachment()
+    {
+        unset($this->ConfirmationAttachment);
     }
 
     /**
@@ -88,11 +98,21 @@ class InvoiceConfirmationDocflow extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Docflow.ReceiptDocflow ReceiptDocflow = 3;</code>
-     * @return \Diadoc\Proto\Docflow\ReceiptDocflow
+     * @return \Diadoc\Proto\Docflow\ReceiptDocflow|null
      */
     public function getReceiptDocflow()
     {
         return $this->ReceiptDocflow;
+    }
+
+    public function hasReceiptDocflow()
+    {
+        return isset($this->ReceiptDocflow);
+    }
+
+    public function clearReceiptDocflow()
+    {
+        unset($this->ReceiptDocflow);
     }
 
     /**

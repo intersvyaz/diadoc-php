@@ -18,19 +18,19 @@ class AcceptanceCertificateSignatureInfo extends \Google\Protobuf\Internal\Messa
      *
      * Generated from protobuf field <code>string SignatureDate = 1;</code>
      */
-    private $SignatureDate = '';
+    protected $SignatureDate = '';
     /**
      * лицо, подписывающее со стороны исполнителя / заказчика
      *
      * Generated from protobuf field <code>.Diadoc.Proto.Invoicing.Official Official = 2;</code>
      */
-    private $Official = null;
+    protected $Official = null;
     /**
      * сведения о доверенности подписывающего со стороны исполнителя / заказчика
      *
      * Generated from protobuf field <code>.Diadoc.Proto.Invoicing.Attorney Attorney = 3;</code>
      */
-    private $Attorney = null;
+    protected $Attorney = null;
 
     /**
      * Constructor.
@@ -81,11 +81,21 @@ class AcceptanceCertificateSignatureInfo extends \Google\Protobuf\Internal\Messa
      * лицо, подписывающее со стороны исполнителя / заказчика
      *
      * Generated from protobuf field <code>.Diadoc.Proto.Invoicing.Official Official = 2;</code>
-     * @return \Diadoc\Proto\Invoicing\Official
+     * @return \Diadoc\Proto\Invoicing\Official|null
      */
     public function getOfficial()
     {
         return $this->Official;
+    }
+
+    public function hasOfficial()
+    {
+        return isset($this->Official);
+    }
+
+    public function clearOfficial()
+    {
+        unset($this->Official);
     }
 
     /**
@@ -107,11 +117,21 @@ class AcceptanceCertificateSignatureInfo extends \Google\Protobuf\Internal\Messa
      * сведения о доверенности подписывающего со стороны исполнителя / заказчика
      *
      * Generated from protobuf field <code>.Diadoc.Proto.Invoicing.Attorney Attorney = 3;</code>
-     * @return \Diadoc\Proto\Invoicing\Attorney
+     * @return \Diadoc\Proto\Invoicing\Attorney|null
      */
     public function getAttorney()
     {
         return $this->Attorney;
+    }
+
+    public function hasAttorney()
+    {
+        return isset($this->Attorney);
+    }
+
+    public function clearAttorney()
+    {
+        unset($this->Attorney);
     }
 
     /**

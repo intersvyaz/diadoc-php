@@ -18,43 +18,43 @@ class Attorney extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string Date = 1;</code>
      */
-    private $Date = '';
+    protected $Date = '';
     /**
      * номер доверенности
      *
      * Generated from protobuf field <code>string Number = 2;</code>
      */
-    private $Number = '';
+    protected $Number = '';
     /**
      * организация, представитель которой выдал доверенность
      *
      * Generated from protobuf field <code>string IssuerOrganizationName = 3;</code>
      */
-    private $IssuerOrganizationName = '';
+    protected $IssuerOrganizationName = '';
     /**
      * лицо, выдавшее доверенность
      *
      * Generated from protobuf field <code>.Diadoc.Proto.Invoicing.Official IssuerPerson = 4;</code>
      */
-    private $IssuerPerson = null;
+    protected $IssuerPerson = null;
     /**
      * дополнительная информация о выдавшем доверенность
      *
      * Generated from protobuf field <code>string IssuerAdditionalInfo = 5;</code>
      */
-    private $IssuerAdditionalInfo = '';
+    protected $IssuerAdditionalInfo = '';
     /**
      * лицо, получившее доверенность
      *
      * Generated from protobuf field <code>.Diadoc.Proto.Invoicing.Official RecipientPerson = 6;</code>
      */
-    private $RecipientPerson = null;
+    protected $RecipientPerson = null;
     /**
      * дополнительная информация о получившем доверенность
      *
      * Generated from protobuf field <code>string RecipientAdditionalInfo = 7;</code>
      */
-    private $RecipientAdditionalInfo = '';
+    protected $RecipientAdditionalInfo = '';
 
     /**
      * Constructor.
@@ -165,11 +165,21 @@ class Attorney extends \Google\Protobuf\Internal\Message
      * лицо, выдавшее доверенность
      *
      * Generated from protobuf field <code>.Diadoc.Proto.Invoicing.Official IssuerPerson = 4;</code>
-     * @return \Diadoc\Proto\Invoicing\Official
+     * @return \Diadoc\Proto\Invoicing\Official|null
      */
     public function getIssuerPerson()
     {
         return $this->IssuerPerson;
+    }
+
+    public function hasIssuerPerson()
+    {
+        return isset($this->IssuerPerson);
+    }
+
+    public function clearIssuerPerson()
+    {
+        unset($this->IssuerPerson);
     }
 
     /**
@@ -217,11 +227,21 @@ class Attorney extends \Google\Protobuf\Internal\Message
      * лицо, получившее доверенность
      *
      * Generated from protobuf field <code>.Diadoc.Proto.Invoicing.Official RecipientPerson = 6;</code>
-     * @return \Diadoc\Proto\Invoicing\Official
+     * @return \Diadoc\Proto\Invoicing\Official|null
      */
     public function getRecipientPerson()
     {
         return $this->RecipientPerson;
+    }
+
+    public function hasRecipientPerson()
+    {
+        return isset($this->RecipientPerson);
+    }
+
+    public function clearRecipientPerson()
+    {
+        unset($this->RecipientPerson);
     }
 
     /**

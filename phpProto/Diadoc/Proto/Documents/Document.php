@@ -16,27 +16,27 @@ class Document extends \Google\Protobuf\Internal\Message
     /**
      * Generated from protobuf field <code>string IndexKey = 1;</code>
      */
-    private $IndexKey = '';
+    protected $IndexKey = '';
     /**
      * Generated from protobuf field <code>string MessageId = 2;</code>
      */
-    private $MessageId = '';
+    protected $MessageId = '';
     /**
      * Generated from protobuf field <code>string EntityId = 3;</code>
      */
-    private $EntityId = '';
+    protected $EntityId = '';
     /**
      * Generated from protobuf field <code>sfixed64 CreationTimestampTicks = 4;</code>
      */
-    private $CreationTimestampTicks = 0;
+    protected $CreationTimestampTicks = 0;
     /**
      * Generated from protobuf field <code>string CounteragentBoxId = 5;</code>
      */
-    private $CounteragentBoxId = '';
+    protected $CounteragentBoxId = '';
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.DocumentType DocumentType = 6;</code>
      */
-    private $DocumentType = 0;
+    protected $DocumentType = 0;
     /**
      * Generated from protobuf field <code>repeated .Diadoc.Proto.DocumentId InitialDocumentIds = 7;</code>
      */
@@ -48,107 +48,107 @@ class Document extends \Google\Protobuf\Internal\Message
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Content Content = 9;</code>
      */
-    private $Content = null;
+    protected $Content = null;
     /**
      * Generated from protobuf field <code>string FileName = 10;</code>
      */
-    private $FileName = '';
+    protected $FileName = '';
     /**
      * Generated from protobuf field <code>string DocumentDate = 11;</code>
      */
-    private $DocumentDate = '';
+    protected $DocumentDate = '';
     /**
      * Generated from protobuf field <code>string DocumentNumber = 12;</code>
      */
-    private $DocumentNumber = '';
+    protected $DocumentNumber = '';
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Documents.NonformalizedDocument.NonformalizedDocumentMetadata NonformalizedDocumentMetadata = 13;</code>
      */
-    private $NonformalizedDocumentMetadata = null;
+    protected $NonformalizedDocumentMetadata = null;
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Documents.InvoiceDocument.InvoiceMetadata InvoiceMetadata = 14;</code>
      */
-    private $InvoiceMetadata = null;
+    protected $InvoiceMetadata = null;
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Documents.BilateralDocument.TrustConnectionRequestMetadata TrustConnectionRequestMetadata = 15;</code>
      */
-    private $TrustConnectionRequestMetadata = null;
+    protected $TrustConnectionRequestMetadata = null;
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Documents.BilateralDocument.BasicDocumentMetadata Torg12Metadata = 16;</code>
      */
-    private $Torg12Metadata = null;
+    protected $Torg12Metadata = null;
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Documents.InvoiceDocument.InvoiceRevisionMetadata InvoiceRevisionMetadata = 17;</code>
      */
-    private $InvoiceRevisionMetadata = null;
+    protected $InvoiceRevisionMetadata = null;
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Documents.InvoiceDocument.InvoiceCorrectionMetadata InvoiceCorrectionMetadata = 18;</code>
      */
-    private $InvoiceCorrectionMetadata = null;
+    protected $InvoiceCorrectionMetadata = null;
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Documents.InvoiceDocument.InvoiceCorrectionRevisionMetadata InvoiceCorrectionRevisionMetadata = 19;</code>
      */
-    private $InvoiceCorrectionRevisionMetadata = null;
+    protected $InvoiceCorrectionRevisionMetadata = null;
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Documents.AcceptanceCertificateDocument.AcceptanceCertificateMetadata AcceptanceCertificateMetadata = 20;</code>
      */
-    private $AcceptanceCertificateMetadata = null;
+    protected $AcceptanceCertificateMetadata = null;
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Documents.UnilateralDocument.ProformaInvoiceMetadata ProformaInvoiceMetadata = 21;</code>
      */
-    private $ProformaInvoiceMetadata = null;
+    protected $ProformaInvoiceMetadata = null;
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Documents.BilateralDocument.BasicDocumentMetadata XmlTorg12Metadata = 22;</code>
      */
-    private $XmlTorg12Metadata = null;
+    protected $XmlTorg12Metadata = null;
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Documents.BilateralDocument.BasicDocumentMetadata XmlAcceptanceCertificateMetadata = 23;</code>
      */
-    private $XmlAcceptanceCertificateMetadata = null;
+    protected $XmlAcceptanceCertificateMetadata = null;
     /**
      * Generated from protobuf field <code>bool IsDeleted = 24;</code>
      */
-    private $IsDeleted = false;
+    protected $IsDeleted = false;
     /**
      * Generated from protobuf field <code>string DepartmentId = 25;</code>
      */
-    private $DepartmentId = '';
+    protected $DepartmentId = '';
     /**
      * Generated from protobuf field <code>bool IsTest = 26;</code>
      */
-    private $IsTest = false;
+    protected $IsTest = false;
     /**
      * Generated from protobuf field <code>string FromDepartmentId = 27;</code>
      */
-    private $FromDepartmentId = '';
+    protected $FromDepartmentId = '';
     /**
      * Generated from protobuf field <code>string ToDepartmentId = 28;</code>
      */
-    private $ToDepartmentId = '';
+    protected $ToDepartmentId = '';
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Documents.BilateralDocument.PriceListMetadata PriceListMetadata = 29;</code>
      */
-    private $PriceListMetadata = null;
+    protected $PriceListMetadata = null;
     /**
      * Generated from protobuf field <code>string CustomDocumentId = 30;</code>
      */
-    private $CustomDocumentId = '';
+    protected $CustomDocumentId = '';
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Documents.ResolutionStatus ResolutionStatus = 31;</code>
      */
-    private $ResolutionStatus = null;
+    protected $ResolutionStatus = null;
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Documents.RevocationStatus RevocationStatus = 32;</code>
      */
-    private $RevocationStatus = 0;
+    protected $RevocationStatus = 0;
     /**
      * Generated from protobuf field <code>sfixed64 SendTimestampTicks = 33;</code>
      */
-    private $SendTimestampTicks = 0;
+    protected $SendTimestampTicks = 0;
     /**
      * Generated from protobuf field <code>sfixed64 DeliveryTimestampTicks = 34;</code>
      */
-    private $DeliveryTimestampTicks = 0;
+    protected $DeliveryTimestampTicks = 0;
     /**
      * Generated from protobuf field <code>repeated .Diadoc.Proto.ForwardDocumentEvent ForwardDocumentEvents = 35;</code>
      */
@@ -156,27 +156,27 @@ class Document extends \Google\Protobuf\Internal\Message
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Documents.BilateralDocument.BilateralDocumentMetadata ReconciliationActMetadata = 38;</code>
      */
-    private $ReconciliationActMetadata = null;
+    protected $ReconciliationActMetadata = null;
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Documents.BilateralDocument.ContractMetadata ContractMetadata = 39;</code>
      */
-    private $ContractMetadata = null;
+    protected $ContractMetadata = null;
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Documents.BilateralDocument.BasicDocumentMetadata Torg13Metadata = 40;</code>
      */
-    private $Torg13Metadata = null;
+    protected $Torg13Metadata = null;
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Documents.UnilateralDocument.ServiceDetailsMetadata ServiceDetailsMetadata = 41;</code>
      */
-    private $ServiceDetailsMetadata = null;
+    protected $ServiceDetailsMetadata = null;
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Documents.RoamingNotificationStatus RoamingNotificationStatus = 42;</code>
      */
-    private $RoamingNotificationStatus = 0;
+    protected $RoamingNotificationStatus = 0;
     /**
      * Generated from protobuf field <code>bool HasCustomPrintForm = 43;</code>
      */
-    private $HasCustomPrintForm = false;
+    protected $HasCustomPrintForm = false;
     /**
      * Generated from protobuf field <code>repeated .Diadoc.Proto.CustomDataItem CustomData = 44;</code>
      */
@@ -184,55 +184,67 @@ class Document extends \Google\Protobuf\Internal\Message
     /**
      * Generated from protobuf field <code>string PacketId = 45;</code>
      */
-    private $PacketId = '';
+    protected $PacketId = '';
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.DocumentDirection DocumentDirection = 46;</code>
      */
-    private $DocumentDirection = 0;
+    protected $DocumentDirection = 0;
     /**
      * Generated from protobuf field <code>sfixed64 LastModificationTimestampTicks = 47;</code>
      */
-    private $LastModificationTimestampTicks = 0;
+    protected $LastModificationTimestampTicks = 0;
     /**
      * Generated from protobuf field <code>bool IsEncryptedContent = 48;</code>
      */
-    private $IsEncryptedContent = false;
+    protected $IsEncryptedContent = false;
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Documents.SenderSignatureStatus SenderSignatureStatus = 49;</code>
      */
-    private $SenderSignatureStatus = 0;
+    protected $SenderSignatureStatus = 0;
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Documents.BilateralDocument.SupplementaryAgreementMetadata SupplementaryAgreementMetadata = 50;</code>
      */
-    private $SupplementaryAgreementMetadata = null;
+    protected $SupplementaryAgreementMetadata = null;
     /**
      * Generated from protobuf field <code>bool IsRead = 51;</code>
      */
-    private $IsRead = false;
+    protected $IsRead = false;
     /**
      * Generated from protobuf field <code>string RoamingNotificationStatusDescription = 52;</code>
      */
-    private $RoamingNotificationStatusDescription = '';
+    protected $RoamingNotificationStatusDescription = '';
     /**
      * Generated from protobuf field <code>bool PacketIsLocked = 53;</code>
      */
-    private $PacketIsLocked = false;
+    protected $PacketIsLocked = false;
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Documents.NonformalizedDocument.NonformalizedDocumentMetadata PriceListAgreementMetadata = 54;</code>
      */
-    private $PriceListAgreementMetadata = null;
+    protected $PriceListAgreementMetadata = null;
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Documents.NonformalizedDocument.NonformalizedDocumentMetadata CertificateRegistryMetadata = 55;</code>
      */
-    private $CertificateRegistryMetadata = null;
+    protected $CertificateRegistryMetadata = null;
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Documents.UniversalTransferDocument.UniversalTransferDocumentMetadata UniversalTransferDocumentMetadata = 56;</code>
      */
-    private $UniversalTransferDocumentMetadata = null;
+    protected $UniversalTransferDocumentMetadata = null;
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Documents.RecipientResponseStatus RecipientResponseStatus = 70;</code>
      */
-    private $RecipientResponseStatus = 0;
+    protected $RecipientResponseStatus = 0;
+    /**
+     * Generated from protobuf field <code>string TypeNamedId = 63;</code>
+     */
+    protected $TypeNamedId = '';
+    /**
+     * Generated from protobuf field <code>string Function = 64;</code>
+     */
+    protected $Function = '';
+    /**
+     * Generated from protobuf field <code>string Title = 66;</code>
+     */
+    protected $Title = '';
 
     /**
      * Constructor.
@@ -295,6 +307,9 @@ class Document extends \Google\Protobuf\Internal\Message
      *     @type \Diadoc\Proto\Documents\NonformalizedDocument\NonformalizedDocumentMetadata $CertificateRegistryMetadata
      *     @type \Diadoc\Proto\Documents\UniversalTransferDocument\UniversalTransferDocumentMetadata $UniversalTransferDocumentMetadata
      *     @type int $RecipientResponseStatus
+     *     @type string $TypeNamedId
+     *     @type string $Function
+     *     @type string $Title
      * }
      */
     public function __construct($data = NULL) {
@@ -480,11 +495,21 @@ class Document extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Content Content = 9;</code>
-     * @return \Diadoc\Proto\Content
+     * @return \Diadoc\Proto\Content|null
      */
     public function getContent()
     {
         return $this->Content;
+    }
+
+    public function hasContent()
+    {
+        return isset($this->Content);
+    }
+
+    public function clearContent()
+    {
+        unset($this->Content);
     }
 
     /**
@@ -568,11 +593,21 @@ class Document extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Documents.NonformalizedDocument.NonformalizedDocumentMetadata NonformalizedDocumentMetadata = 13;</code>
-     * @return \Diadoc\Proto\Documents\NonformalizedDocument\NonformalizedDocumentMetadata
+     * @return \Diadoc\Proto\Documents\NonformalizedDocument\NonformalizedDocumentMetadata|null
      */
     public function getNonformalizedDocumentMetadata()
     {
         return $this->NonformalizedDocumentMetadata;
+    }
+
+    public function hasNonformalizedDocumentMetadata()
+    {
+        return isset($this->NonformalizedDocumentMetadata);
+    }
+
+    public function clearNonformalizedDocumentMetadata()
+    {
+        unset($this->NonformalizedDocumentMetadata);
     }
 
     /**
@@ -590,11 +625,21 @@ class Document extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Documents.InvoiceDocument.InvoiceMetadata InvoiceMetadata = 14;</code>
-     * @return \Diadoc\Proto\Documents\InvoiceDocument\InvoiceMetadata
+     * @return \Diadoc\Proto\Documents\InvoiceDocument\InvoiceMetadata|null
      */
     public function getInvoiceMetadata()
     {
         return $this->InvoiceMetadata;
+    }
+
+    public function hasInvoiceMetadata()
+    {
+        return isset($this->InvoiceMetadata);
+    }
+
+    public function clearInvoiceMetadata()
+    {
+        unset($this->InvoiceMetadata);
     }
 
     /**
@@ -612,11 +657,21 @@ class Document extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Documents.BilateralDocument.TrustConnectionRequestMetadata TrustConnectionRequestMetadata = 15;</code>
-     * @return \Diadoc\Proto\Documents\BilateralDocument\TrustConnectionRequestMetadata
+     * @return \Diadoc\Proto\Documents\BilateralDocument\TrustConnectionRequestMetadata|null
      */
     public function getTrustConnectionRequestMetadata()
     {
         return $this->TrustConnectionRequestMetadata;
+    }
+
+    public function hasTrustConnectionRequestMetadata()
+    {
+        return isset($this->TrustConnectionRequestMetadata);
+    }
+
+    public function clearTrustConnectionRequestMetadata()
+    {
+        unset($this->TrustConnectionRequestMetadata);
     }
 
     /**
@@ -634,11 +689,21 @@ class Document extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Documents.BilateralDocument.BasicDocumentMetadata Torg12Metadata = 16;</code>
-     * @return \Diadoc\Proto\Documents\BilateralDocument\BasicDocumentMetadata
+     * @return \Diadoc\Proto\Documents\BilateralDocument\BasicDocumentMetadata|null
      */
     public function getTorg12Metadata()
     {
         return $this->Torg12Metadata;
+    }
+
+    public function hasTorg12Metadata()
+    {
+        return isset($this->Torg12Metadata);
+    }
+
+    public function clearTorg12Metadata()
+    {
+        unset($this->Torg12Metadata);
     }
 
     /**
@@ -656,11 +721,21 @@ class Document extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Documents.InvoiceDocument.InvoiceRevisionMetadata InvoiceRevisionMetadata = 17;</code>
-     * @return \Diadoc\Proto\Documents\InvoiceDocument\InvoiceRevisionMetadata
+     * @return \Diadoc\Proto\Documents\InvoiceDocument\InvoiceRevisionMetadata|null
      */
     public function getInvoiceRevisionMetadata()
     {
         return $this->InvoiceRevisionMetadata;
+    }
+
+    public function hasInvoiceRevisionMetadata()
+    {
+        return isset($this->InvoiceRevisionMetadata);
+    }
+
+    public function clearInvoiceRevisionMetadata()
+    {
+        unset($this->InvoiceRevisionMetadata);
     }
 
     /**
@@ -678,11 +753,21 @@ class Document extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Documents.InvoiceDocument.InvoiceCorrectionMetadata InvoiceCorrectionMetadata = 18;</code>
-     * @return \Diadoc\Proto\Documents\InvoiceDocument\InvoiceCorrectionMetadata
+     * @return \Diadoc\Proto\Documents\InvoiceDocument\InvoiceCorrectionMetadata|null
      */
     public function getInvoiceCorrectionMetadata()
     {
         return $this->InvoiceCorrectionMetadata;
+    }
+
+    public function hasInvoiceCorrectionMetadata()
+    {
+        return isset($this->InvoiceCorrectionMetadata);
+    }
+
+    public function clearInvoiceCorrectionMetadata()
+    {
+        unset($this->InvoiceCorrectionMetadata);
     }
 
     /**
@@ -700,11 +785,21 @@ class Document extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Documents.InvoiceDocument.InvoiceCorrectionRevisionMetadata InvoiceCorrectionRevisionMetadata = 19;</code>
-     * @return \Diadoc\Proto\Documents\InvoiceDocument\InvoiceCorrectionRevisionMetadata
+     * @return \Diadoc\Proto\Documents\InvoiceDocument\InvoiceCorrectionRevisionMetadata|null
      */
     public function getInvoiceCorrectionRevisionMetadata()
     {
         return $this->InvoiceCorrectionRevisionMetadata;
+    }
+
+    public function hasInvoiceCorrectionRevisionMetadata()
+    {
+        return isset($this->InvoiceCorrectionRevisionMetadata);
+    }
+
+    public function clearInvoiceCorrectionRevisionMetadata()
+    {
+        unset($this->InvoiceCorrectionRevisionMetadata);
     }
 
     /**
@@ -722,11 +817,21 @@ class Document extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Documents.AcceptanceCertificateDocument.AcceptanceCertificateMetadata AcceptanceCertificateMetadata = 20;</code>
-     * @return \Diadoc\Proto\Documents\AcceptanceCertificateDocument\AcceptanceCertificateMetadata
+     * @return \Diadoc\Proto\Documents\AcceptanceCertificateDocument\AcceptanceCertificateMetadata|null
      */
     public function getAcceptanceCertificateMetadata()
     {
         return $this->AcceptanceCertificateMetadata;
+    }
+
+    public function hasAcceptanceCertificateMetadata()
+    {
+        return isset($this->AcceptanceCertificateMetadata);
+    }
+
+    public function clearAcceptanceCertificateMetadata()
+    {
+        unset($this->AcceptanceCertificateMetadata);
     }
 
     /**
@@ -744,11 +849,21 @@ class Document extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Documents.UnilateralDocument.ProformaInvoiceMetadata ProformaInvoiceMetadata = 21;</code>
-     * @return \Diadoc\Proto\Documents\UnilateralDocument\ProformaInvoiceMetadata
+     * @return \Diadoc\Proto\Documents\UnilateralDocument\ProformaInvoiceMetadata|null
      */
     public function getProformaInvoiceMetadata()
     {
         return $this->ProformaInvoiceMetadata;
+    }
+
+    public function hasProformaInvoiceMetadata()
+    {
+        return isset($this->ProformaInvoiceMetadata);
+    }
+
+    public function clearProformaInvoiceMetadata()
+    {
+        unset($this->ProformaInvoiceMetadata);
     }
 
     /**
@@ -766,11 +881,21 @@ class Document extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Documents.BilateralDocument.BasicDocumentMetadata XmlTorg12Metadata = 22;</code>
-     * @return \Diadoc\Proto\Documents\BilateralDocument\BasicDocumentMetadata
+     * @return \Diadoc\Proto\Documents\BilateralDocument\BasicDocumentMetadata|null
      */
     public function getXmlTorg12Metadata()
     {
         return $this->XmlTorg12Metadata;
+    }
+
+    public function hasXmlTorg12Metadata()
+    {
+        return isset($this->XmlTorg12Metadata);
+    }
+
+    public function clearXmlTorg12Metadata()
+    {
+        unset($this->XmlTorg12Metadata);
     }
 
     /**
@@ -788,11 +913,21 @@ class Document extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Documents.BilateralDocument.BasicDocumentMetadata XmlAcceptanceCertificateMetadata = 23;</code>
-     * @return \Diadoc\Proto\Documents\BilateralDocument\BasicDocumentMetadata
+     * @return \Diadoc\Proto\Documents\BilateralDocument\BasicDocumentMetadata|null
      */
     public function getXmlAcceptanceCertificateMetadata()
     {
         return $this->XmlAcceptanceCertificateMetadata;
+    }
+
+    public function hasXmlAcceptanceCertificateMetadata()
+    {
+        return isset($this->XmlAcceptanceCertificateMetadata);
+    }
+
+    public function clearXmlAcceptanceCertificateMetadata()
+    {
+        unset($this->XmlAcceptanceCertificateMetadata);
     }
 
     /**
@@ -920,11 +1055,21 @@ class Document extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Documents.BilateralDocument.PriceListMetadata PriceListMetadata = 29;</code>
-     * @return \Diadoc\Proto\Documents\BilateralDocument\PriceListMetadata
+     * @return \Diadoc\Proto\Documents\BilateralDocument\PriceListMetadata|null
      */
     public function getPriceListMetadata()
     {
         return $this->PriceListMetadata;
+    }
+
+    public function hasPriceListMetadata()
+    {
+        return isset($this->PriceListMetadata);
+    }
+
+    public function clearPriceListMetadata()
+    {
+        unset($this->PriceListMetadata);
     }
 
     /**
@@ -964,11 +1109,21 @@ class Document extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Documents.ResolutionStatus ResolutionStatus = 31;</code>
-     * @return \Diadoc\Proto\Documents\ResolutionStatus
+     * @return \Diadoc\Proto\Documents\ResolutionStatus|null
      */
     public function getResolutionStatus()
     {
         return $this->ResolutionStatus;
+    }
+
+    public function hasResolutionStatus()
+    {
+        return isset($this->ResolutionStatus);
+    }
+
+    public function clearResolutionStatus()
+    {
+        unset($this->ResolutionStatus);
     }
 
     /**
@@ -1074,11 +1229,21 @@ class Document extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Documents.BilateralDocument.BilateralDocumentMetadata ReconciliationActMetadata = 38;</code>
-     * @return \Diadoc\Proto\Documents\BilateralDocument\BilateralDocumentMetadata
+     * @return \Diadoc\Proto\Documents\BilateralDocument\BilateralDocumentMetadata|null
      */
     public function getReconciliationActMetadata()
     {
         return $this->ReconciliationActMetadata;
+    }
+
+    public function hasReconciliationActMetadata()
+    {
+        return isset($this->ReconciliationActMetadata);
+    }
+
+    public function clearReconciliationActMetadata()
+    {
+        unset($this->ReconciliationActMetadata);
     }
 
     /**
@@ -1096,11 +1261,21 @@ class Document extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Documents.BilateralDocument.ContractMetadata ContractMetadata = 39;</code>
-     * @return \Diadoc\Proto\Documents\BilateralDocument\ContractMetadata
+     * @return \Diadoc\Proto\Documents\BilateralDocument\ContractMetadata|null
      */
     public function getContractMetadata()
     {
         return $this->ContractMetadata;
+    }
+
+    public function hasContractMetadata()
+    {
+        return isset($this->ContractMetadata);
+    }
+
+    public function clearContractMetadata()
+    {
+        unset($this->ContractMetadata);
     }
 
     /**
@@ -1118,11 +1293,21 @@ class Document extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Documents.BilateralDocument.BasicDocumentMetadata Torg13Metadata = 40;</code>
-     * @return \Diadoc\Proto\Documents\BilateralDocument\BasicDocumentMetadata
+     * @return \Diadoc\Proto\Documents\BilateralDocument\BasicDocumentMetadata|null
      */
     public function getTorg13Metadata()
     {
         return $this->Torg13Metadata;
+    }
+
+    public function hasTorg13Metadata()
+    {
+        return isset($this->Torg13Metadata);
+    }
+
+    public function clearTorg13Metadata()
+    {
+        unset($this->Torg13Metadata);
     }
 
     /**
@@ -1140,11 +1325,21 @@ class Document extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Documents.UnilateralDocument.ServiceDetailsMetadata ServiceDetailsMetadata = 41;</code>
-     * @return \Diadoc\Proto\Documents\UnilateralDocument\ServiceDetailsMetadata
+     * @return \Diadoc\Proto\Documents\UnilateralDocument\ServiceDetailsMetadata|null
      */
     public function getServiceDetailsMetadata()
     {
         return $this->ServiceDetailsMetadata;
+    }
+
+    public function hasServiceDetailsMetadata()
+    {
+        return isset($this->ServiceDetailsMetadata);
+    }
+
+    public function clearServiceDetailsMetadata()
+    {
+        unset($this->ServiceDetailsMetadata);
     }
 
     /**
@@ -1338,11 +1533,21 @@ class Document extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Documents.BilateralDocument.SupplementaryAgreementMetadata SupplementaryAgreementMetadata = 50;</code>
-     * @return \Diadoc\Proto\Documents\BilateralDocument\SupplementaryAgreementMetadata
+     * @return \Diadoc\Proto\Documents\BilateralDocument\SupplementaryAgreementMetadata|null
      */
     public function getSupplementaryAgreementMetadata()
     {
         return $this->SupplementaryAgreementMetadata;
+    }
+
+    public function hasSupplementaryAgreementMetadata()
+    {
+        return isset($this->SupplementaryAgreementMetadata);
+    }
+
+    public function clearSupplementaryAgreementMetadata()
+    {
+        unset($this->SupplementaryAgreementMetadata);
     }
 
     /**
@@ -1426,11 +1631,21 @@ class Document extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Documents.NonformalizedDocument.NonformalizedDocumentMetadata PriceListAgreementMetadata = 54;</code>
-     * @return \Diadoc\Proto\Documents\NonformalizedDocument\NonformalizedDocumentMetadata
+     * @return \Diadoc\Proto\Documents\NonformalizedDocument\NonformalizedDocumentMetadata|null
      */
     public function getPriceListAgreementMetadata()
     {
         return $this->PriceListAgreementMetadata;
+    }
+
+    public function hasPriceListAgreementMetadata()
+    {
+        return isset($this->PriceListAgreementMetadata);
+    }
+
+    public function clearPriceListAgreementMetadata()
+    {
+        unset($this->PriceListAgreementMetadata);
     }
 
     /**
@@ -1448,11 +1663,21 @@ class Document extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Documents.NonformalizedDocument.NonformalizedDocumentMetadata CertificateRegistryMetadata = 55;</code>
-     * @return \Diadoc\Proto\Documents\NonformalizedDocument\NonformalizedDocumentMetadata
+     * @return \Diadoc\Proto\Documents\NonformalizedDocument\NonformalizedDocumentMetadata|null
      */
     public function getCertificateRegistryMetadata()
     {
         return $this->CertificateRegistryMetadata;
+    }
+
+    public function hasCertificateRegistryMetadata()
+    {
+        return isset($this->CertificateRegistryMetadata);
+    }
+
+    public function clearCertificateRegistryMetadata()
+    {
+        unset($this->CertificateRegistryMetadata);
     }
 
     /**
@@ -1470,11 +1695,21 @@ class Document extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Documents.UniversalTransferDocument.UniversalTransferDocumentMetadata UniversalTransferDocumentMetadata = 56;</code>
-     * @return \Diadoc\Proto\Documents\UniversalTransferDocument\UniversalTransferDocumentMetadata
+     * @return \Diadoc\Proto\Documents\UniversalTransferDocument\UniversalTransferDocumentMetadata|null
      */
     public function getUniversalTransferDocumentMetadata()
     {
         return $this->UniversalTransferDocumentMetadata;
+    }
+
+    public function hasUniversalTransferDocumentMetadata()
+    {
+        return isset($this->UniversalTransferDocumentMetadata);
+    }
+
+    public function clearUniversalTransferDocumentMetadata()
+    {
+        unset($this->UniversalTransferDocumentMetadata);
     }
 
     /**
@@ -1508,6 +1743,72 @@ class Document extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkEnum($var, \Diadoc\Proto\Documents\RecipientResponseStatus::class);
         $this->RecipientResponseStatus = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string TypeNamedId = 63;</code>
+     * @return string
+     */
+    public function getTypeNamedId()
+    {
+        return $this->TypeNamedId;
+    }
+
+    /**
+     * Generated from protobuf field <code>string TypeNamedId = 63;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setTypeNamedId($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->TypeNamedId = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string Function = 64;</code>
+     * @return string
+     */
+    public function getFunction()
+    {
+        return $this->Function;
+    }
+
+    /**
+     * Generated from protobuf field <code>string Function = 64;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setFunction($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->Function = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string Title = 66;</code>
+     * @return string
+     */
+    public function getTitle()
+    {
+        return $this->Title;
+    }
+
+    /**
+     * Generated from protobuf field <code>string Title = 66;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setTitle($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->Title = $var;
 
         return $this;
     }

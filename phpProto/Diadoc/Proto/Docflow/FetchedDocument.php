@@ -16,11 +16,11 @@ class FetchedDocument extends \Google\Protobuf\Internal\Message
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Docflow.DocumentWithDocflow Document = 1;</code>
      */
-    private $Document = null;
+    protected $Document = null;
     /**
      * Generated from protobuf field <code>bytes IndexKey = 2;</code>
      */
-    private $IndexKey = '';
+    protected $IndexKey = '';
 
     /**
      * Constructor.
@@ -39,11 +39,21 @@ class FetchedDocument extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Docflow.DocumentWithDocflow Document = 1;</code>
-     * @return \Diadoc\Proto\Docflow\DocumentWithDocflow
+     * @return \Diadoc\Proto\Docflow\DocumentWithDocflow|null
      */
     public function getDocument()
     {
         return $this->Document;
+    }
+
+    public function hasDocument()
+    {
+        return isset($this->Document);
+    }
+
+    public function clearDocument()
+    {
+        unset($this->Document);
     }
 
     /**

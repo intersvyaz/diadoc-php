@@ -16,15 +16,15 @@ class EncryptedInvoiceCorrectionMetadata extends \Google\Protobuf\Internal\Messa
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Docflow.DocumentDateAndNumber OriginalInvoiceDateAndNumber = 1;</code>
      */
-    private $OriginalInvoiceDateAndNumber = null;
+    protected $OriginalInvoiceDateAndNumber = null;
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Docflow.DocumentDateAndNumber OriginalInvoiceRevisionDateAndNumber = 2;</code>
      */
-    private $OriginalInvoiceRevisionDateAndNumber = null;
+    protected $OriginalInvoiceRevisionDateAndNumber = null;
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Docflow.DocumentDateAndNumber InvoiceCorrectionRevisionDateAndNumber = 3;</code>
      */
-    private $InvoiceCorrectionRevisionDateAndNumber = null;
+    protected $InvoiceCorrectionRevisionDateAndNumber = null;
 
     /**
      * Constructor.
@@ -44,11 +44,21 @@ class EncryptedInvoiceCorrectionMetadata extends \Google\Protobuf\Internal\Messa
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Docflow.DocumentDateAndNumber OriginalInvoiceDateAndNumber = 1;</code>
-     * @return \Diadoc\Proto\Docflow\DocumentDateAndNumber
+     * @return \Diadoc\Proto\Docflow\DocumentDateAndNumber|null
      */
     public function getOriginalInvoiceDateAndNumber()
     {
         return $this->OriginalInvoiceDateAndNumber;
+    }
+
+    public function hasOriginalInvoiceDateAndNumber()
+    {
+        return isset($this->OriginalInvoiceDateAndNumber);
+    }
+
+    public function clearOriginalInvoiceDateAndNumber()
+    {
+        unset($this->OriginalInvoiceDateAndNumber);
     }
 
     /**
@@ -66,11 +76,21 @@ class EncryptedInvoiceCorrectionMetadata extends \Google\Protobuf\Internal\Messa
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Docflow.DocumentDateAndNumber OriginalInvoiceRevisionDateAndNumber = 2;</code>
-     * @return \Diadoc\Proto\Docflow\DocumentDateAndNumber
+     * @return \Diadoc\Proto\Docflow\DocumentDateAndNumber|null
      */
     public function getOriginalInvoiceRevisionDateAndNumber()
     {
         return $this->OriginalInvoiceRevisionDateAndNumber;
+    }
+
+    public function hasOriginalInvoiceRevisionDateAndNumber()
+    {
+        return isset($this->OriginalInvoiceRevisionDateAndNumber);
+    }
+
+    public function clearOriginalInvoiceRevisionDateAndNumber()
+    {
+        unset($this->OriginalInvoiceRevisionDateAndNumber);
     }
 
     /**
@@ -88,11 +108,21 @@ class EncryptedInvoiceCorrectionMetadata extends \Google\Protobuf\Internal\Messa
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Docflow.DocumentDateAndNumber InvoiceCorrectionRevisionDateAndNumber = 3;</code>
-     * @return \Diadoc\Proto\Docflow\DocumentDateAndNumber
+     * @return \Diadoc\Proto\Docflow\DocumentDateAndNumber|null
      */
     public function getInvoiceCorrectionRevisionDateAndNumber()
     {
         return $this->InvoiceCorrectionRevisionDateAndNumber;
+    }
+
+    public function hasInvoiceCorrectionRevisionDateAndNumber()
+    {
+        return isset($this->InvoiceCorrectionRevisionDateAndNumber);
+    }
+
+    public function clearInvoiceCorrectionRevisionDateAndNumber()
+    {
+        unset($this->InvoiceCorrectionRevisionDateAndNumber);
     }
 
     /**

@@ -16,11 +16,11 @@ class DocflowStatus extends \Google\Protobuf\Internal\Message
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Docflow.DocflowStatusModel PrimaryStatus = 1;</code>
      */
-    private $PrimaryStatus = null;
+    protected $PrimaryStatus = null;
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Docflow.DocflowStatusModel SecondaryStatus = 2;</code>
      */
-    private $SecondaryStatus = null;
+    protected $SecondaryStatus = null;
 
     /**
      * Constructor.
@@ -39,11 +39,21 @@ class DocflowStatus extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Docflow.DocflowStatusModel PrimaryStatus = 1;</code>
-     * @return \Diadoc\Proto\Docflow\DocflowStatusModel
+     * @return \Diadoc\Proto\Docflow\DocflowStatusModel|null
      */
     public function getPrimaryStatus()
     {
         return $this->PrimaryStatus;
+    }
+
+    public function hasPrimaryStatus()
+    {
+        return isset($this->PrimaryStatus);
+    }
+
+    public function clearPrimaryStatus()
+    {
+        unset($this->PrimaryStatus);
     }
 
     /**
@@ -61,11 +71,21 @@ class DocflowStatus extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Docflow.DocflowStatusModel SecondaryStatus = 2;</code>
-     * @return \Diadoc\Proto\Docflow\DocflowStatusModel
+     * @return \Diadoc\Proto\Docflow\DocflowStatusModel|null
      */
     public function getSecondaryStatus()
     {
         return $this->SecondaryStatus;
+    }
+
+    public function hasSecondaryStatus()
+    {
+        return isset($this->SecondaryStatus);
+    }
+
+    public function clearSecondaryStatus()
+    {
+        unset($this->SecondaryStatus);
     }
 
     /**

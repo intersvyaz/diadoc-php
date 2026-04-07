@@ -15,14 +15,15 @@ class ReceiptDocflow
           return;
         }
         \GPBMetadata\Docflow\Attachment::initOnce();
-        $pool->internalAddGeneratedFile(hex2bin(
-            "0aa5010a1c446f63666c6f772f52656365697074446f63666c6f772e7072" .
-            "6f746f1214446961646f632e50726f746f2e446f63666c6f7722670a0e52" .
-            "656365697074446f63666c6f7712120a0a497346696e6973686564180120" .
-            "01280812410a11526563656970744174746163686d656e7418022001280b" .
-            "32262e446961646f632e50726f746f2e446f63666c6f772e5369676e6564" .
-            "4174746163686d656e74620670726f746f33"
-        ));
+        $pool->internalAddGeneratedFile(
+            '
+¥
+Docflow/ReceiptDocflow.protoDiadoc.Proto.Docflow"g
+ReceiptDocflow
+
+IsFinished (A
+ReceiptAttachment (2&.Diadoc.Proto.Docflow.SignedAttachmentbproto3'
+        , true);
 
         static::$is_initialized = true;
     }

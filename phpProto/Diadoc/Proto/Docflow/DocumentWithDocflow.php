@@ -16,23 +16,23 @@ class DocumentWithDocflow extends \Google\Protobuf\Internal\Message
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.DocumentId DocumentId = 1;</code>
      */
-    private $DocumentId = null;
+    protected $DocumentId = null;
     /**
      * Generated from protobuf field <code>string LastEventId = 2;</code>
      */
-    private $LastEventId = '';
+    protected $LastEventId = '';
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Timestamp LastEventTimestamp = 3;</code>
      */
-    private $LastEventTimestamp = null;
+    protected $LastEventTimestamp = null;
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Docflow.DocumentInfo DocumentInfo = 4;</code>
      */
-    private $DocumentInfo = null;
+    protected $DocumentInfo = null;
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Docflow.Docflow Docflow = 5;</code>
      */
-    private $Docflow = null;
+    protected $Docflow = null;
     /**
      * Generated from protobuf field <code>repeated .Diadoc.Proto.DocumentId InitialDocumentIds = 6;</code>
      */
@@ -69,11 +69,21 @@ class DocumentWithDocflow extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.DocumentId DocumentId = 1;</code>
-     * @return \Diadoc\Proto\DocumentId
+     * @return \Diadoc\Proto\DocumentId|null
      */
     public function getDocumentId()
     {
         return $this->DocumentId;
+    }
+
+    public function hasDocumentId()
+    {
+        return isset($this->DocumentId);
+    }
+
+    public function clearDocumentId()
+    {
+        unset($this->DocumentId);
     }
 
     /**
@@ -113,11 +123,21 @@ class DocumentWithDocflow extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Timestamp LastEventTimestamp = 3;</code>
-     * @return \Diadoc\Proto\Timestamp
+     * @return \Diadoc\Proto\Timestamp|null
      */
     public function getLastEventTimestamp()
     {
         return $this->LastEventTimestamp;
+    }
+
+    public function hasLastEventTimestamp()
+    {
+        return isset($this->LastEventTimestamp);
+    }
+
+    public function clearLastEventTimestamp()
+    {
+        unset($this->LastEventTimestamp);
     }
 
     /**
@@ -135,11 +155,21 @@ class DocumentWithDocflow extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Docflow.DocumentInfo DocumentInfo = 4;</code>
-     * @return \Diadoc\Proto\Docflow\DocumentInfo
+     * @return \Diadoc\Proto\Docflow\DocumentInfo|null
      */
     public function getDocumentInfo()
     {
         return $this->DocumentInfo;
+    }
+
+    public function hasDocumentInfo()
+    {
+        return isset($this->DocumentInfo);
+    }
+
+    public function clearDocumentInfo()
+    {
+        unset($this->DocumentInfo);
     }
 
     /**
@@ -157,11 +187,21 @@ class DocumentWithDocflow extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Docflow.Docflow Docflow = 5;</code>
-     * @return \Diadoc\Proto\Docflow\Docflow
+     * @return \Diadoc\Proto\Docflow\Docflow|null
      */
     public function getDocflow()
     {
         return $this->Docflow;
+    }
+
+    public function hasDocflow()
+    {
+        return isset($this->Docflow);
+    }
+
+    public function clearDocflow()
+    {
+        unset($this->Docflow);
     }
 
     /**

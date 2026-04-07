@@ -16,13 +16,13 @@ class CorrectionRequestAttachment extends \Google\Protobuf\Internal\Message
     /**
      * Generated from protobuf field <code>string ParentEntityId = 1;</code>
      */
-    private $ParentEntityId = '';
+    protected $ParentEntityId = '';
     /**
      * do not use field #3
      *
      * Generated from protobuf field <code>.Diadoc.Proto.Events.SignedContent SignedContent = 2;</code>
      */
-    private $SignedContent = null;
+    protected $SignedContent = null;
 
     /**
      * Constructor.
@@ -66,11 +66,21 @@ class CorrectionRequestAttachment extends \Google\Protobuf\Internal\Message
      * do not use field #3
      *
      * Generated from protobuf field <code>.Diadoc.Proto.Events.SignedContent SignedContent = 2;</code>
-     * @return \Diadoc\Proto\Events\SignedContent
+     * @return \Diadoc\Proto\Events\SignedContent|null
      */
     public function getSignedContent()
     {
         return $this->SignedContent;
+    }
+
+    public function hasSignedContent()
+    {
+        return isset($this->SignedContent);
+    }
+
+    public function clearSignedContent()
+    {
+        unset($this->SignedContent);
     }
 
     /**

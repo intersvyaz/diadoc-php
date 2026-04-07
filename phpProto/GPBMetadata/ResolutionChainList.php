@@ -14,15 +14,16 @@ class ResolutionChainList
         if (static::$is_initialized == true) {
           return;
         }
-        $pool->internalAddGeneratedFile(hex2bin(
-            "0ab3010a195265736f6c7574696f6e436861696e4c6973742e70726f746f" .
-            "120c446961646f632e50726f746f224e0a135265736f6c7574696f6e4368" .
-            "61696e4c69737412370a105265736f6c7574696f6e436861696e73180120" .
-            "03280b321d2e446961646f632e50726f746f2e5265736f6c7574696f6e43" .
-            "6861696e22300a0f5265736f6c7574696f6e436861696e120f0a07436861" .
-            "696e4964180120012809120c0a044e616d65180220012809620670726f74" .
-            "6f33"
-        ));
+        $pool->internalAddGeneratedFile(
+            '
+³
+ResolutionChainList.protoDiadoc.Proto"N
+ResolutionChainList7
+ResolutionChains (2.Diadoc.Proto.ResolutionChain"0
+ResolutionChain
+ChainId (	
+Name (	bproto3'
+        , true);
 
         static::$is_initialized = true;
     }

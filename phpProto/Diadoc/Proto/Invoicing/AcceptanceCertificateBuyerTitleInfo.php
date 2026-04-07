@@ -20,25 +20,25 @@ class AcceptanceCertificateBuyerTitleInfo extends \Google\Protobuf\Internal\Mess
      *
      * Generated from protobuf field <code>string Complaints = 1;</code>
      */
-    private $Complaints = '';
+    protected $Complaints = '';
     /**
      * сведения о подписи акта
      *
      * Generated from protobuf field <code>.Diadoc.Proto.Invoicing.AcceptanceCertificateSignatureInfo Signature = 2;</code>
      */
-    private $Signature = null;
+    protected $Signature = null;
     /**
      * подписант
      *
      * Generated from protobuf field <code>.Diadoc.Proto.Invoicing.Signer Signer = 3;</code>
      */
-    private $Signer = null;
+    protected $Signer = null;
     /**
      * дополнительная информация
      *
      * Generated from protobuf field <code>string AdditionalInfo = 4;</code>
      */
-    private $AdditionalInfo = '';
+    protected $AdditionalInfo = '';
 
     /**
      * Constructor.
@@ -91,11 +91,21 @@ class AcceptanceCertificateBuyerTitleInfo extends \Google\Protobuf\Internal\Mess
      * сведения о подписи акта
      *
      * Generated from protobuf field <code>.Diadoc.Proto.Invoicing.AcceptanceCertificateSignatureInfo Signature = 2;</code>
-     * @return \Diadoc\Proto\Invoicing\AcceptanceCertificateSignatureInfo
+     * @return \Diadoc\Proto\Invoicing\AcceptanceCertificateSignatureInfo|null
      */
     public function getSignature()
     {
         return $this->Signature;
+    }
+
+    public function hasSignature()
+    {
+        return isset($this->Signature);
+    }
+
+    public function clearSignature()
+    {
+        unset($this->Signature);
     }
 
     /**
@@ -117,11 +127,21 @@ class AcceptanceCertificateBuyerTitleInfo extends \Google\Protobuf\Internal\Mess
      * подписант
      *
      * Generated from protobuf field <code>.Diadoc.Proto.Invoicing.Signer Signer = 3;</code>
-     * @return \Diadoc\Proto\Invoicing\Signer
+     * @return \Diadoc\Proto\Invoicing\Signer|null
      */
     public function getSigner()
     {
         return $this->Signer;
+    }
+
+    public function hasSigner()
+    {
+        return isset($this->Signer);
+    }
+
+    public function clearSigner()
+    {
+        unset($this->Signer);
     }
 
     /**

@@ -14,13 +14,13 @@ class DocumentZip
         if (static::$is_initialized == true) {
           return;
         }
-        $pool->internalAddGeneratedFile(hex2bin(
-            "0a780a1b446f63756d656e74732f446f63756d656e745a69702e70726f74" .
-            "6f1216446961646f632e50726f746f2e446f63756d656e747322390a1b44" .
-            "6f63756d656e745a697047656e65726174696f6e526573756c74121a0a12" .
-            "5a697046696c654e616d654f6e5368656c66180120012809620670726f74" .
-            "6f33"
-        ));
+        $pool->internalAddGeneratedFile(
+            '
+x
+Documents/DocumentZip.protoDiadoc.Proto.Documents"9
+DocumentZipGenerationResult
+ZipFileNameOnShelf (	bproto3'
+        , true);
 
         static::$is_initialized = true;
     }

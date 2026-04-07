@@ -16,15 +16,15 @@ class InboundInvoiceReceiptDocflow extends \Google\Protobuf\Internal\Message
     /**
      * Generated from protobuf field <code>bool IsFinished = 1;</code>
      */
-    private $IsFinished = false;
+    protected $IsFinished = false;
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Docflow.SignedAttachment ReceiptAttachment = 2;</code>
      */
-    private $ReceiptAttachment = null;
+    protected $ReceiptAttachment = null;
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Docflow.InvoiceConfirmationDocflow ConfirmationDocflow = 3;</code>
      */
-    private $ConfirmationDocflow = null;
+    protected $ConfirmationDocflow = null;
 
     /**
      * Constructor.
@@ -66,11 +66,21 @@ class InboundInvoiceReceiptDocflow extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Docflow.SignedAttachment ReceiptAttachment = 2;</code>
-     * @return \Diadoc\Proto\Docflow\SignedAttachment
+     * @return \Diadoc\Proto\Docflow\SignedAttachment|null
      */
     public function getReceiptAttachment()
     {
         return $this->ReceiptAttachment;
+    }
+
+    public function hasReceiptAttachment()
+    {
+        return isset($this->ReceiptAttachment);
+    }
+
+    public function clearReceiptAttachment()
+    {
+        unset($this->ReceiptAttachment);
     }
 
     /**
@@ -88,11 +98,21 @@ class InboundInvoiceReceiptDocflow extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Docflow.InvoiceConfirmationDocflow ConfirmationDocflow = 3;</code>
-     * @return \Diadoc\Proto\Docflow\InvoiceConfirmationDocflow
+     * @return \Diadoc\Proto\Docflow\InvoiceConfirmationDocflow|null
      */
     public function getConfirmationDocflow()
     {
         return $this->ConfirmationDocflow;
+    }
+
+    public function hasConfirmationDocflow()
+    {
+        return isset($this->ConfirmationDocflow);
+    }
+
+    public function clearConfirmationDocflow()
+    {
+        unset($this->ConfirmationDocflow);
     }
 
     /**

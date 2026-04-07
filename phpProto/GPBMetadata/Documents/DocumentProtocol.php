@@ -14,13 +14,14 @@ class DocumentProtocol
         if (static::$is_initialized == true) {
           return;
         }
-        $pool->internalAddGeneratedFile(hex2bin(
-            "0a7c0a20446f63756d656e74732f446f63756d656e7450726f746f636f6c" .
-            "2e70726f746f1216446961646f632e50726f746f2e446f63756d656e7473" .
-            "22380a10446f63756d656e7450726f746f636f6c12110a095072696e7446" .
-            "6f726d18012001280c12110a095369676e617475726518022001280c6206" .
-            "70726f746f33"
-        ));
+        $pool->internalAddGeneratedFile(
+            '
+|
+ Documents/DocumentProtocol.protoDiadoc.Proto.Documents"8
+DocumentProtocol
+	PrintForm (
+	Signature (bproto3'
+        , true);
 
         static::$is_initialized = true;
     }

@@ -16,15 +16,15 @@ class Attachment extends \Google\Protobuf\Internal\Message
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Docflow.Entity Entity = 1;</code>
      */
-    private $Entity = null;
+    protected $Entity = null;
     /**
      * Generated from protobuf field <code>string AttachmentFilename = 2;</code>
      */
-    private $AttachmentFilename = '';
+    protected $AttachmentFilename = '';
     /**
      * Generated from protobuf field <code>string DisplayFilename = 3;</code>
      */
-    private $DisplayFilename = '';
+    protected $DisplayFilename = '';
 
     /**
      * Constructor.
@@ -44,11 +44,21 @@ class Attachment extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Docflow.Entity Entity = 1;</code>
-     * @return \Diadoc\Proto\Docflow\Entity
+     * @return \Diadoc\Proto\Docflow\Entity|null
      */
     public function getEntity()
     {
         return $this->Entity;
+    }
+
+    public function hasEntity()
+    {
+        return isset($this->Entity);
+    }
+
+    public function clearEntity()
+    {
+        unset($this->Entity);
     }
 
     /**

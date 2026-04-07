@@ -18,19 +18,19 @@ class TransferInfo extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string OperationInfo = 1;</code>
      */
-    private $OperationInfo = '';
+    protected $OperationInfo = '';
     /**
      * Вид операции // ВидОпер
      *
      * Generated from protobuf field <code>string OperationType = 2;</code>
      */
-    private $OperationType = '';
+    protected $OperationType = '';
     /**
      * Дата отгрузки // ДатаПер
      *
      * Generated from protobuf field <code>string TransferDate = 3;</code>
      */
-    private $TransferDate = '';
+    protected $TransferDate = '';
     /**
      * Основание отгрузки //ОснПер
      *
@@ -42,7 +42,7 @@ class TransferInfo extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string TransferTextInfo = 5;</code>
      */
-    private $TransferTextInfo = '';
+    protected $TransferTextInfo = '';
     /**
      * Транспортная накладная //ТранНакл
      *
@@ -54,37 +54,37 @@ class TransferInfo extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>.Diadoc.Proto.Invoicing.Organizations.ExtendedOrganizationInfo Carrier = 7;</code>
      */
-    private $Carrier = null;
+    protected $Carrier = null;
     /**
      * Работник организации продавца //РабОргПрод
      *
      * Generated from protobuf field <code>.Diadoc.Proto.Invoicing.Employee Employee = 8;</code>
      */
-    private $Employee = null;
+    protected $Employee = null;
     /**
      * Иное лицо //ИнЛицо
      *
      * Generated from protobuf field <code>.Diadoc.Proto.Invoicing.OtherIssuer OtherIssuer = 9;</code>
      */
-    private $OtherIssuer = null;
+    protected $OtherIssuer = null;
     /**
      * Дата передачи вещи, изготовленной по договору //ДатаПерВещ
      *
      * Generated from protobuf field <code>string CreatedThingTransferDate = 10;</code>
      */
-    private $CreatedThingTransferDate = '';
+    protected $CreatedThingTransferDate = '';
     /**
      * Сведения о передаче, изготовленной по договору //СвПерВещ
      *
      * Generated from protobuf field <code>string CreatedThingInfo = 11;</code>
      */
-    private $CreatedThingInfo = '';
+    protected $CreatedThingInfo = '';
     /**
      * Информационное поле документа // ИнфПолФХЖ3
      *
      * Generated from protobuf field <code>.Diadoc.Proto.Invoicing.AdditionalInfoId AdditionalInfoId = 12;</code>
      */
-    private $AdditionalInfoId = null;
+    protected $AdditionalInfoId = null;
 
     /**
      * Constructor.
@@ -283,11 +283,21 @@ class TransferInfo extends \Google\Protobuf\Internal\Message
      * Перевозчик // Перевозчик
      *
      * Generated from protobuf field <code>.Diadoc.Proto.Invoicing.Organizations.ExtendedOrganizationInfo Carrier = 7;</code>
-     * @return \Diadoc\Proto\Invoicing\Organizations\ExtendedOrganizationInfo
+     * @return \Diadoc\Proto\Invoicing\Organizations\ExtendedOrganizationInfo|null
      */
     public function getCarrier()
     {
         return $this->Carrier;
+    }
+
+    public function hasCarrier()
+    {
+        return isset($this->Carrier);
+    }
+
+    public function clearCarrier()
+    {
+        unset($this->Carrier);
     }
 
     /**
@@ -309,11 +319,21 @@ class TransferInfo extends \Google\Protobuf\Internal\Message
      * Работник организации продавца //РабОргПрод
      *
      * Generated from protobuf field <code>.Diadoc.Proto.Invoicing.Employee Employee = 8;</code>
-     * @return \Diadoc\Proto\Invoicing\Employee
+     * @return \Diadoc\Proto\Invoicing\Employee|null
      */
     public function getEmployee()
     {
         return $this->Employee;
+    }
+
+    public function hasEmployee()
+    {
+        return isset($this->Employee);
+    }
+
+    public function clearEmployee()
+    {
+        unset($this->Employee);
     }
 
     /**
@@ -335,11 +355,21 @@ class TransferInfo extends \Google\Protobuf\Internal\Message
      * Иное лицо //ИнЛицо
      *
      * Generated from protobuf field <code>.Diadoc.Proto.Invoicing.OtherIssuer OtherIssuer = 9;</code>
-     * @return \Diadoc\Proto\Invoicing\OtherIssuer
+     * @return \Diadoc\Proto\Invoicing\OtherIssuer|null
      */
     public function getOtherIssuer()
     {
         return $this->OtherIssuer;
+    }
+
+    public function hasOtherIssuer()
+    {
+        return isset($this->OtherIssuer);
+    }
+
+    public function clearOtherIssuer()
+    {
+        unset($this->OtherIssuer);
     }
 
     /**
@@ -413,11 +443,21 @@ class TransferInfo extends \Google\Protobuf\Internal\Message
      * Информационное поле документа // ИнфПолФХЖ3
      *
      * Generated from protobuf field <code>.Diadoc.Proto.Invoicing.AdditionalInfoId AdditionalInfoId = 12;</code>
-     * @return \Diadoc\Proto\Invoicing\AdditionalInfoId
+     * @return \Diadoc\Proto\Invoicing\AdditionalInfoId|null
      */
     public function getAdditionalInfoId()
     {
         return $this->AdditionalInfoId;
+    }
+
+    public function hasAdditionalInfoId()
+    {
+        return isset($this->AdditionalInfoId);
+    }
+
+    public function clearAdditionalInfoId()
+    {
+        unset($this->AdditionalInfoId);
     }
 
     /**

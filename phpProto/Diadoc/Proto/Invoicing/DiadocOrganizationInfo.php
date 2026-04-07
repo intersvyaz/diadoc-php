@@ -18,13 +18,13 @@ class DiadocOrganizationInfo extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string BoxId = 1;</code>
      */
-    private $BoxId = '';
+    protected $BoxId = '';
     /**
      * реквизиты организации
      *
      * Generated from protobuf field <code>.Diadoc.Proto.Invoicing.OrganizationInfo OrgInfo = 2;</code>
      */
-    private $OrgInfo = null;
+    protected $OrgInfo = null;
 
     /**
      * Constructor.
@@ -73,11 +73,21 @@ class DiadocOrganizationInfo extends \Google\Protobuf\Internal\Message
      * реквизиты организации
      *
      * Generated from protobuf field <code>.Diadoc.Proto.Invoicing.OrganizationInfo OrgInfo = 2;</code>
-     * @return \Diadoc\Proto\Invoicing\OrganizationInfo
+     * @return \Diadoc\Proto\Invoicing\OrganizationInfo|null
      */
     public function getOrgInfo()
     {
         return $this->OrgInfo;
+    }
+
+    public function hasOrgInfo()
+    {
+        return isset($this->OrgInfo);
+    }
+
+    public function clearOrgInfo()
+    {
+        unset($this->OrgInfo);
     }
 
     /**

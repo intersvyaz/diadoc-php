@@ -18,37 +18,37 @@ class InvoiceCorrectionItem extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string Product = 1;</code>
      */
-    private $Product = '';
+    protected $Product = '';
     /**
      * значения до изменения
      *
      * Generated from protobuf field <code>.Diadoc.Proto.Invoicing.CorrectableInvoiceItemFields OriginalValues = 2;</code>
      */
-    private $OriginalValues = null;
+    protected $OriginalValues = null;
     /**
      * значения после изменения
      *
      * Generated from protobuf field <code>.Diadoc.Proto.Invoicing.CorrectableInvoiceItemFields CorrectedValues = 3;</code>
      */
-    private $CorrectedValues = null;
+    protected $CorrectedValues = null;
     /**
      * суммы к увеличению
      *
      * Generated from protobuf field <code>.Diadoc.Proto.Invoicing.InvoiceItemAmountsDiff AmountsInc = 4;</code>
      */
-    private $AmountsInc = null;
+    protected $AmountsInc = null;
     /**
      * суммы к уменьшению
      *
      * Generated from protobuf field <code>.Diadoc.Proto.Invoicing.InvoiceItemAmountsDiff AmountsDec = 5;</code>
      */
-    private $AmountsDec = null;
+    protected $AmountsDec = null;
     /**
      * информационное поле товара v5.01
      *
      * Generated from protobuf field <code>string AdditionalInfo = 6;</code>
      */
-    private $AdditionalInfo = '';
+    protected $AdditionalInfo = '';
     /**
      * информационное поле документа v5.02
      *
@@ -113,11 +113,21 @@ class InvoiceCorrectionItem extends \Google\Protobuf\Internal\Message
      * значения до изменения
      *
      * Generated from protobuf field <code>.Diadoc.Proto.Invoicing.CorrectableInvoiceItemFields OriginalValues = 2;</code>
-     * @return \Diadoc\Proto\Invoicing\CorrectableInvoiceItemFields
+     * @return \Diadoc\Proto\Invoicing\CorrectableInvoiceItemFields|null
      */
     public function getOriginalValues()
     {
         return $this->OriginalValues;
+    }
+
+    public function hasOriginalValues()
+    {
+        return isset($this->OriginalValues);
+    }
+
+    public function clearOriginalValues()
+    {
+        unset($this->OriginalValues);
     }
 
     /**
@@ -139,11 +149,21 @@ class InvoiceCorrectionItem extends \Google\Protobuf\Internal\Message
      * значения после изменения
      *
      * Generated from protobuf field <code>.Diadoc.Proto.Invoicing.CorrectableInvoiceItemFields CorrectedValues = 3;</code>
-     * @return \Diadoc\Proto\Invoicing\CorrectableInvoiceItemFields
+     * @return \Diadoc\Proto\Invoicing\CorrectableInvoiceItemFields|null
      */
     public function getCorrectedValues()
     {
         return $this->CorrectedValues;
+    }
+
+    public function hasCorrectedValues()
+    {
+        return isset($this->CorrectedValues);
+    }
+
+    public function clearCorrectedValues()
+    {
+        unset($this->CorrectedValues);
     }
 
     /**
@@ -165,11 +185,21 @@ class InvoiceCorrectionItem extends \Google\Protobuf\Internal\Message
      * суммы к увеличению
      *
      * Generated from protobuf field <code>.Diadoc.Proto.Invoicing.InvoiceItemAmountsDiff AmountsInc = 4;</code>
-     * @return \Diadoc\Proto\Invoicing\InvoiceItemAmountsDiff
+     * @return \Diadoc\Proto\Invoicing\InvoiceItemAmountsDiff|null
      */
     public function getAmountsInc()
     {
         return $this->AmountsInc;
+    }
+
+    public function hasAmountsInc()
+    {
+        return isset($this->AmountsInc);
+    }
+
+    public function clearAmountsInc()
+    {
+        unset($this->AmountsInc);
     }
 
     /**
@@ -191,11 +221,21 @@ class InvoiceCorrectionItem extends \Google\Protobuf\Internal\Message
      * суммы к уменьшению
      *
      * Generated from protobuf field <code>.Diadoc.Proto.Invoicing.InvoiceItemAmountsDiff AmountsDec = 5;</code>
-     * @return \Diadoc\Proto\Invoicing\InvoiceItemAmountsDiff
+     * @return \Diadoc\Proto\Invoicing\InvoiceItemAmountsDiff|null
      */
     public function getAmountsDec()
     {
         return $this->AmountsDec;
+    }
+
+    public function hasAmountsDec()
+    {
+        return isset($this->AmountsDec);
+    }
+
+    public function clearAmountsDec()
+    {
+        unset($this->AmountsDec);
     }
 
     /**

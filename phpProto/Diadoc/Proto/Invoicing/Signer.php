@@ -16,15 +16,15 @@ class Signer extends \Google\Protobuf\Internal\Message
     /**
      * Generated from protobuf field <code>bytes SignerCertificate = 1;</code>
      */
-    private $SignerCertificate = '';
+    protected $SignerCertificate = '';
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Invoicing.SignerDetails SignerDetails = 2;</code>
      */
-    private $SignerDetails = null;
+    protected $SignerDetails = null;
     /**
      * Generated from protobuf field <code>string SignerCertificateThumbprint = 3;</code>
      */
-    private $SignerCertificateThumbprint = '';
+    protected $SignerCertificateThumbprint = '';
 
     /**
      * Constructor.
@@ -66,11 +66,21 @@ class Signer extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Invoicing.SignerDetails SignerDetails = 2;</code>
-     * @return \Diadoc\Proto\Invoicing\SignerDetails
+     * @return \Diadoc\Proto\Invoicing\SignerDetails|null
      */
     public function getSignerDetails()
     {
         return $this->SignerDetails;
+    }
+
+    public function hasSignerDetails()
+    {
+        return isset($this->SignerDetails);
+    }
+
+    public function clearSignerDetails()
+    {
+        unset($this->SignerDetails);
     }
 
     /**

@@ -16,15 +16,15 @@ class Entity extends \Google\Protobuf\Internal\Message
     /**
      * Generated from protobuf field <code>string EntityId = 1;</code>
      */
-    private $EntityId = '';
+    protected $EntityId = '';
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Timestamp CreationTimestamp = 2;</code>
      */
-    private $CreationTimestamp = null;
+    protected $CreationTimestamp = null;
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Content Content = 3;</code>
      */
-    private $Content = null;
+    protected $Content = null;
 
     /**
      * Constructor.
@@ -66,11 +66,21 @@ class Entity extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Timestamp CreationTimestamp = 2;</code>
-     * @return \Diadoc\Proto\Timestamp
+     * @return \Diadoc\Proto\Timestamp|null
      */
     public function getCreationTimestamp()
     {
         return $this->CreationTimestamp;
+    }
+
+    public function hasCreationTimestamp()
+    {
+        return isset($this->CreationTimestamp);
+    }
+
+    public function clearCreationTimestamp()
+    {
+        unset($this->CreationTimestamp);
     }
 
     /**
@@ -88,11 +98,21 @@ class Entity extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Content Content = 3;</code>
-     * @return \Diadoc\Proto\Content
+     * @return \Diadoc\Proto\Content|null
      */
     public function getContent()
     {
         return $this->Content;
+    }
+
+    public function hasContent()
+    {
+        return isset($this->Content);
+    }
+
+    public function clearContent()
+    {
+        unset($this->Content);
     }
 
     /**

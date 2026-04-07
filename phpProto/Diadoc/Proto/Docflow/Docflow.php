@@ -16,77 +16,77 @@ class Docflow extends \Google\Protobuf\Internal\Message
     /**
      * Generated from protobuf field <code>bool IsFinished = 1;</code>
      */
-    private $IsFinished = false;
+    protected $IsFinished = false;
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Docflow.SignedAttachment DocumentAttachment = 2;</code>
      */
-    private $DocumentAttachment = null;
+    protected $DocumentAttachment = null;
     /**
      * Generated from protobuf field <code>string DepartmentId = 3;</code>
      */
-    private $DepartmentId = '';
+    protected $DepartmentId = '';
     /**
      * Generated from protobuf field <code>bool DocumentIsDeleted = 4;</code>
      */
-    private $DocumentIsDeleted = false;
+    protected $DocumentIsDeleted = false;
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Docflow.DocflowStatus DocflowStatus = 5;</code>
      */
-    private $DocflowStatus = null;
+    protected $DocflowStatus = null;
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Timestamp SendTimestamp = 6;</code>
      */
-    private $SendTimestamp = null;
+    protected $SendTimestamp = null;
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Timestamp DeliveryTimestamp = 7;</code>
      */
-    private $DeliveryTimestamp = null;
+    protected $DeliveryTimestamp = null;
     /**
      * for Invoice, InvoiceRevision, InvoiceCorrection, InvoiceCorrectionRevision
      *
      * Generated from protobuf field <code>.Diadoc.Proto.Docflow.InboundInvoiceDocflow InboundInvoiceDocflow = 8;</code>
      */
-    private $InboundInvoiceDocflow = null;
+    protected $InboundInvoiceDocflow = null;
     /**
      * for Invoice, InvoiceRevision, InvoiceCorrection, InvoiceCorrectionRevision
      *
      * Generated from protobuf field <code>.Diadoc.Proto.Docflow.OutboundInvoiceDocflow OutboundInvoiceDocflow = 9;</code>
      */
-    private $OutboundInvoiceDocflow = null;
+    protected $OutboundInvoiceDocflow = null;
     /**
      * for XmlTorg12, XmlAcceptanceCertificate
      *
      * Generated from protobuf field <code>.Diadoc.Proto.Docflow.XmlBilateralDocflow XmlBilateralDocflow = 10;</code>
      */
-    private $XmlBilateralDocflow = null;
+    protected $XmlBilateralDocflow = null;
     /**
      * for Nonformalized, Torg12, AcceptanceCertificate, TrustConnectionRequest, PriceList, PriceListAgreement, CertificateRegistry, ReconciliationAct, Contract, Torg13
      *
      * Generated from protobuf field <code>.Diadoc.Proto.Docflow.BilateralDocflow BilateralDocflow = 11;</code>
      */
-    private $BilateralDocflow = null;
+    protected $BilateralDocflow = null;
     /**
      * for ProformaInvoice, ServiceDetails
      *
      * Generated from protobuf field <code>.Diadoc.Proto.Docflow.UnilateralDocflow UnilateralDocflow = 12;</code>
      */
-    private $UnilateralDocflow = null;
+    protected $UnilateralDocflow = null;
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Docflow.RevocationDocflow RevocationDocflow = 13;</code>
      */
-    private $RevocationDocflow = null;
+    protected $RevocationDocflow = null;
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Docflow.ResolutionDocflow ResolutionDocflow = 14;</code>
      */
-    private $ResolutionDocflow = null;
+    protected $ResolutionDocflow = null;
     /**
      * Generated from protobuf field <code>bool CanDocumentBeRevokedUnilaterallyBySender = 15;</code>
      */
-    private $CanDocumentBeRevokedUnilaterallyBySender = false;
+    protected $CanDocumentBeRevokedUnilaterallyBySender = false;
     /**
      * Generated from protobuf field <code>string PacketId = 16;</code>
      */
-    private $PacketId = '';
+    protected $PacketId = '';
     /**
      * Generated from protobuf field <code>repeated .Diadoc.Proto.CustomDataItem CustomData = 17;</code>
      */
@@ -151,11 +151,21 @@ class Docflow extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Docflow.SignedAttachment DocumentAttachment = 2;</code>
-     * @return \Diadoc\Proto\Docflow\SignedAttachment
+     * @return \Diadoc\Proto\Docflow\SignedAttachment|null
      */
     public function getDocumentAttachment()
     {
         return $this->DocumentAttachment;
+    }
+
+    public function hasDocumentAttachment()
+    {
+        return isset($this->DocumentAttachment);
+    }
+
+    public function clearDocumentAttachment()
+    {
+        unset($this->DocumentAttachment);
     }
 
     /**
@@ -217,11 +227,21 @@ class Docflow extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Docflow.DocflowStatus DocflowStatus = 5;</code>
-     * @return \Diadoc\Proto\Docflow\DocflowStatus
+     * @return \Diadoc\Proto\Docflow\DocflowStatus|null
      */
     public function getDocflowStatus()
     {
         return $this->DocflowStatus;
+    }
+
+    public function hasDocflowStatus()
+    {
+        return isset($this->DocflowStatus);
+    }
+
+    public function clearDocflowStatus()
+    {
+        unset($this->DocflowStatus);
     }
 
     /**
@@ -239,11 +259,21 @@ class Docflow extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Timestamp SendTimestamp = 6;</code>
-     * @return \Diadoc\Proto\Timestamp
+     * @return \Diadoc\Proto\Timestamp|null
      */
     public function getSendTimestamp()
     {
         return $this->SendTimestamp;
+    }
+
+    public function hasSendTimestamp()
+    {
+        return isset($this->SendTimestamp);
+    }
+
+    public function clearSendTimestamp()
+    {
+        unset($this->SendTimestamp);
     }
 
     /**
@@ -261,11 +291,21 @@ class Docflow extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Timestamp DeliveryTimestamp = 7;</code>
-     * @return \Diadoc\Proto\Timestamp
+     * @return \Diadoc\Proto\Timestamp|null
      */
     public function getDeliveryTimestamp()
     {
         return $this->DeliveryTimestamp;
+    }
+
+    public function hasDeliveryTimestamp()
+    {
+        return isset($this->DeliveryTimestamp);
+    }
+
+    public function clearDeliveryTimestamp()
+    {
+        unset($this->DeliveryTimestamp);
     }
 
     /**
@@ -285,11 +325,21 @@ class Docflow extends \Google\Protobuf\Internal\Message
      * for Invoice, InvoiceRevision, InvoiceCorrection, InvoiceCorrectionRevision
      *
      * Generated from protobuf field <code>.Diadoc.Proto.Docflow.InboundInvoiceDocflow InboundInvoiceDocflow = 8;</code>
-     * @return \Diadoc\Proto\Docflow\InboundInvoiceDocflow
+     * @return \Diadoc\Proto\Docflow\InboundInvoiceDocflow|null
      */
     public function getInboundInvoiceDocflow()
     {
         return $this->InboundInvoiceDocflow;
+    }
+
+    public function hasInboundInvoiceDocflow()
+    {
+        return isset($this->InboundInvoiceDocflow);
+    }
+
+    public function clearInboundInvoiceDocflow()
+    {
+        unset($this->InboundInvoiceDocflow);
     }
 
     /**
@@ -311,11 +361,21 @@ class Docflow extends \Google\Protobuf\Internal\Message
      * for Invoice, InvoiceRevision, InvoiceCorrection, InvoiceCorrectionRevision
      *
      * Generated from protobuf field <code>.Diadoc.Proto.Docflow.OutboundInvoiceDocflow OutboundInvoiceDocflow = 9;</code>
-     * @return \Diadoc\Proto\Docflow\OutboundInvoiceDocflow
+     * @return \Diadoc\Proto\Docflow\OutboundInvoiceDocflow|null
      */
     public function getOutboundInvoiceDocflow()
     {
         return $this->OutboundInvoiceDocflow;
+    }
+
+    public function hasOutboundInvoiceDocflow()
+    {
+        return isset($this->OutboundInvoiceDocflow);
+    }
+
+    public function clearOutboundInvoiceDocflow()
+    {
+        unset($this->OutboundInvoiceDocflow);
     }
 
     /**
@@ -337,11 +397,21 @@ class Docflow extends \Google\Protobuf\Internal\Message
      * for XmlTorg12, XmlAcceptanceCertificate
      *
      * Generated from protobuf field <code>.Diadoc.Proto.Docflow.XmlBilateralDocflow XmlBilateralDocflow = 10;</code>
-     * @return \Diadoc\Proto\Docflow\XmlBilateralDocflow
+     * @return \Diadoc\Proto\Docflow\XmlBilateralDocflow|null
      */
     public function getXmlBilateralDocflow()
     {
         return $this->XmlBilateralDocflow;
+    }
+
+    public function hasXmlBilateralDocflow()
+    {
+        return isset($this->XmlBilateralDocflow);
+    }
+
+    public function clearXmlBilateralDocflow()
+    {
+        unset($this->XmlBilateralDocflow);
     }
 
     /**
@@ -363,11 +433,21 @@ class Docflow extends \Google\Protobuf\Internal\Message
      * for Nonformalized, Torg12, AcceptanceCertificate, TrustConnectionRequest, PriceList, PriceListAgreement, CertificateRegistry, ReconciliationAct, Contract, Torg13
      *
      * Generated from protobuf field <code>.Diadoc.Proto.Docflow.BilateralDocflow BilateralDocflow = 11;</code>
-     * @return \Diadoc\Proto\Docflow\BilateralDocflow
+     * @return \Diadoc\Proto\Docflow\BilateralDocflow|null
      */
     public function getBilateralDocflow()
     {
         return $this->BilateralDocflow;
+    }
+
+    public function hasBilateralDocflow()
+    {
+        return isset($this->BilateralDocflow);
+    }
+
+    public function clearBilateralDocflow()
+    {
+        unset($this->BilateralDocflow);
     }
 
     /**
@@ -389,11 +469,21 @@ class Docflow extends \Google\Protobuf\Internal\Message
      * for ProformaInvoice, ServiceDetails
      *
      * Generated from protobuf field <code>.Diadoc.Proto.Docflow.UnilateralDocflow UnilateralDocflow = 12;</code>
-     * @return \Diadoc\Proto\Docflow\UnilateralDocflow
+     * @return \Diadoc\Proto\Docflow\UnilateralDocflow|null
      */
     public function getUnilateralDocflow()
     {
         return $this->UnilateralDocflow;
+    }
+
+    public function hasUnilateralDocflow()
+    {
+        return isset($this->UnilateralDocflow);
+    }
+
+    public function clearUnilateralDocflow()
+    {
+        unset($this->UnilateralDocflow);
     }
 
     /**
@@ -413,11 +503,21 @@ class Docflow extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Docflow.RevocationDocflow RevocationDocflow = 13;</code>
-     * @return \Diadoc\Proto\Docflow\RevocationDocflow
+     * @return \Diadoc\Proto\Docflow\RevocationDocflow|null
      */
     public function getRevocationDocflow()
     {
         return $this->RevocationDocflow;
+    }
+
+    public function hasRevocationDocflow()
+    {
+        return isset($this->RevocationDocflow);
+    }
+
+    public function clearRevocationDocflow()
+    {
+        unset($this->RevocationDocflow);
     }
 
     /**
@@ -435,11 +535,21 @@ class Docflow extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Docflow.ResolutionDocflow ResolutionDocflow = 14;</code>
-     * @return \Diadoc\Proto\Docflow\ResolutionDocflow
+     * @return \Diadoc\Proto\Docflow\ResolutionDocflow|null
      */
     public function getResolutionDocflow()
     {
         return $this->ResolutionDocflow;
+    }
+
+    public function hasResolutionDocflow()
+    {
+        return isset($this->ResolutionDocflow);
+    }
+
+    public function clearResolutionDocflow()
+    {
+        unset($this->ResolutionDocflow);
     }
 
     /**

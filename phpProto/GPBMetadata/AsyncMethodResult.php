@@ -14,11 +14,13 @@ class AsyncMethodResult
         if (static::$is_initialized == true) {
           return;
         }
-        $pool->internalAddGeneratedFile(hex2bin(
-            "0a540a174173796e634d6574686f64526573756c742e70726f746f120c44" .
-            "6961646f632e50726f746f22230a114173796e634d6574686f6452657375" .
-            "6c74120e0a065461736b4964180120012809620670726f746f33"
-        ));
+        $pool->internalAddGeneratedFile(
+            '
+T
+AsyncMethodResult.protoDiadoc.Proto"#
+AsyncMethodResult
+TaskId (	bproto3'
+        , true);
 
         static::$is_initialized = true;
     }

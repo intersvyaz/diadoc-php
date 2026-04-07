@@ -16,15 +16,15 @@ class DraftDocumentToPatch extends \Google\Protobuf\Internal\Message
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.DocumentId DocumentId = 1;</code>
      */
-    private $DocumentId = null;
+    protected $DocumentId = null;
     /**
      * Generated from protobuf field <code>string ToBoxId = 2;</code>
      */
-    private $ToBoxId = '';
+    protected $ToBoxId = '';
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Invoicing.Signer Signer = 3;</code>
      */
-    private $Signer = null;
+    protected $Signer = null;
     /**
      * Generated from protobuf field <code>repeated .Diadoc.Proto.Invoicing.Signers.ExtendedSigner ExtendedSigner = 4;</code>
      */
@@ -49,11 +49,21 @@ class DraftDocumentToPatch extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.DocumentId DocumentId = 1;</code>
-     * @return \Diadoc\Proto\DocumentId
+     * @return \Diadoc\Proto\DocumentId|null
      */
     public function getDocumentId()
     {
         return $this->DocumentId;
+    }
+
+    public function hasDocumentId()
+    {
+        return isset($this->DocumentId);
+    }
+
+    public function clearDocumentId()
+    {
+        unset($this->DocumentId);
     }
 
     /**
@@ -93,11 +103,21 @@ class DraftDocumentToPatch extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Invoicing.Signer Signer = 3;</code>
-     * @return \Diadoc\Proto\Invoicing\Signer
+     * @return \Diadoc\Proto\Invoicing\Signer|null
      */
     public function getSigner()
     {
         return $this->Signer;
+    }
+
+    public function hasSigner()
+    {
+        return isset($this->Signer);
+    }
+
+    public function clearSigner()
+    {
+        unset($this->Signer);
     }
 
     /**

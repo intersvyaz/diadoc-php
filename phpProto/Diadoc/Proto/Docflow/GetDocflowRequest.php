@@ -16,15 +16,15 @@ class GetDocflowRequest extends \Google\Protobuf\Internal\Message
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.DocumentId DocumentId = 1;</code>
      */
-    private $DocumentId = null;
+    protected $DocumentId = null;
     /**
      * Generated from protobuf field <code>string LastEventId = 2;</code>
      */
-    private $LastEventId = '';
+    protected $LastEventId = '';
     /**
      * Generated from protobuf field <code>bool InjectEntityContent = 3;</code>
      */
-    private $InjectEntityContent = false;
+    protected $InjectEntityContent = false;
 
     /**
      * Constructor.
@@ -44,11 +44,21 @@ class GetDocflowRequest extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.DocumentId DocumentId = 1;</code>
-     * @return \Diadoc\Proto\DocumentId
+     * @return \Diadoc\Proto\DocumentId|null
      */
     public function getDocumentId()
     {
         return $this->DocumentId;
+    }
+
+    public function hasDocumentId()
+    {
+        return isset($this->DocumentId);
+    }
+
+    public function clearDocumentId()
+    {
+        unset($this->DocumentId);
     }
 
     /**

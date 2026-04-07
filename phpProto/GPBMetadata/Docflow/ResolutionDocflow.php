@@ -14,11 +14,12 @@ class ResolutionDocflow
         if (static::$is_initialized == true) {
           return;
         }
-        $pool->internalAddGeneratedFile(hex2bin(
-            "0a540a1f446f63666c6f772f5265736f6c7574696f6e446f63666c6f772e" .
-            "70726f746f1214446961646f632e50726f746f2e446f63666c6f7722130a" .
-            "115265736f6c7574696f6e446f63666c6f77620670726f746f33"
-        ));
+        $pool->internalAddGeneratedFile(
+            '
+T
+Docflow/ResolutionDocflow.protoDiadoc.Proto.Docflow"
+ResolutionDocflowbproto3'
+        , true);
 
         static::$is_initialized = true;
     }

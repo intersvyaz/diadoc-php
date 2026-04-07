@@ -16,11 +16,11 @@ class EncryptedXmlDocumentAttachment extends \Google\Protobuf\Internal\Message
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Events.SignedContent SignedContent = 1;</code>
      */
-    private $SignedContent = null;
+    protected $SignedContent = null;
     /**
      * Generated from protobuf field <code>string Comment = 3;</code>
      */
-    private $Comment = '';
+    protected $Comment = '';
     /**
      * Generated from protobuf field <code>repeated .Diadoc.Proto.DocumentId InitialDocumentIds = 4;</code>
      */
@@ -32,7 +32,7 @@ class EncryptedXmlDocumentAttachment extends \Google\Protobuf\Internal\Message
     /**
      * Generated from protobuf field <code>string CustomDocumentId = 6;</code>
      */
-    private $CustomDocumentId = '';
+    protected $CustomDocumentId = '';
     /**
      * Generated from protobuf field <code>repeated .Diadoc.Proto.CustomDataItem CustomData = 7;</code>
      */
@@ -40,11 +40,11 @@ class EncryptedXmlDocumentAttachment extends \Google\Protobuf\Internal\Message
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Events.EncryptedDocumentMetadata Metadata = 8;</code>
      */
-    private $Metadata = null;
+    protected $Metadata = null;
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Events.EncryptedXmlBasicDocumentMetadata XmlBasicMetadata = 9;</code>
      */
-    private $XmlBasicMetadata = null;
+    protected $XmlBasicMetadata = null;
 
     /**
      * Constructor.
@@ -69,11 +69,21 @@ class EncryptedXmlDocumentAttachment extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Events.SignedContent SignedContent = 1;</code>
-     * @return \Diadoc\Proto\Events\SignedContent
+     * @return \Diadoc\Proto\Events\SignedContent|null
      */
     public function getSignedContent()
     {
         return $this->SignedContent;
+    }
+
+    public function hasSignedContent()
+    {
+        return isset($this->SignedContent);
+    }
+
+    public function clearSignedContent()
+    {
+        unset($this->SignedContent);
     }
 
     /**
@@ -201,11 +211,21 @@ class EncryptedXmlDocumentAttachment extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Events.EncryptedDocumentMetadata Metadata = 8;</code>
-     * @return \Diadoc\Proto\Events\EncryptedDocumentMetadata
+     * @return \Diadoc\Proto\Events\EncryptedDocumentMetadata|null
      */
     public function getMetadata()
     {
         return $this->Metadata;
+    }
+
+    public function hasMetadata()
+    {
+        return isset($this->Metadata);
+    }
+
+    public function clearMetadata()
+    {
+        unset($this->Metadata);
     }
 
     /**
@@ -223,11 +243,21 @@ class EncryptedXmlDocumentAttachment extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Events.EncryptedXmlBasicDocumentMetadata XmlBasicMetadata = 9;</code>
-     * @return \Diadoc\Proto\Events\EncryptedXmlBasicDocumentMetadata
+     * @return \Diadoc\Proto\Events\EncryptedXmlBasicDocumentMetadata|null
      */
     public function getXmlBasicMetadata()
     {
         return $this->XmlBasicMetadata;
+    }
+
+    public function hasXmlBasicMetadata()
+    {
+        return isset($this->XmlBasicMetadata);
+    }
+
+    public function clearXmlBasicMetadata()
+    {
+        unset($this->XmlBasicMetadata);
     }
 
     /**

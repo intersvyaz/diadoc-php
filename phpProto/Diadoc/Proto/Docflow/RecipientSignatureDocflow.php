@@ -16,15 +16,15 @@ class RecipientSignatureDocflow extends \Google\Protobuf\Internal\Message
     /**
      * Generated from protobuf field <code>bool IsFinished = 1;</code>
      */
-    private $IsFinished = false;
+    protected $IsFinished = false;
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Docflow.Signature RecipientSignature = 2;</code>
      */
-    private $RecipientSignature = null;
+    protected $RecipientSignature = null;
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Timestamp DeliveryTimestamp = 3;</code>
      */
-    private $DeliveryTimestamp = null;
+    protected $DeliveryTimestamp = null;
 
     /**
      * Constructor.
@@ -66,11 +66,21 @@ class RecipientSignatureDocflow extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Docflow.Signature RecipientSignature = 2;</code>
-     * @return \Diadoc\Proto\Docflow\Signature
+     * @return \Diadoc\Proto\Docflow\Signature|null
      */
     public function getRecipientSignature()
     {
         return $this->RecipientSignature;
+    }
+
+    public function hasRecipientSignature()
+    {
+        return isset($this->RecipientSignature);
+    }
+
+    public function clearRecipientSignature()
+    {
+        unset($this->RecipientSignature);
     }
 
     /**
@@ -88,11 +98,21 @@ class RecipientSignatureDocflow extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Timestamp DeliveryTimestamp = 3;</code>
-     * @return \Diadoc\Proto\Timestamp
+     * @return \Diadoc\Proto\Timestamp|null
      */
     public function getDeliveryTimestamp()
     {
         return $this->DeliveryTimestamp;
+    }
+
+    public function hasDeliveryTimestamp()
+    {
+        return isset($this->DeliveryTimestamp);
+    }
+
+    public function clearDeliveryTimestamp()
+    {
+        unset($this->DeliveryTimestamp);
     }
 
     /**

@@ -16,19 +16,19 @@ class ExtendedSigner extends \Google\Protobuf\Internal\Message
     /**
      * Generated from protobuf field <code>string BoxId = 1;</code>
      */
-    private $BoxId = '';
+    protected $BoxId = '';
     /**
      * Generated from protobuf field <code>bytes SignerCertificate = 2;</code>
      */
-    private $SignerCertificate = '';
+    protected $SignerCertificate = '';
     /**
      * Generated from protobuf field <code>string SignerCertificateThumbprint = 3;</code>
      */
-    private $SignerCertificateThumbprint = '';
+    protected $SignerCertificateThumbprint = '';
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Invoicing.Signers.ExtendedSignerDetails SignerDetails = 4;</code>
      */
-    private $SignerDetails = null;
+    protected $SignerDetails = null;
 
     /**
      * Constructor.
@@ -115,11 +115,21 @@ class ExtendedSigner extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Invoicing.Signers.ExtendedSignerDetails SignerDetails = 4;</code>
-     * @return \Diadoc\Proto\Invoicing\Signers\ExtendedSignerDetails
+     * @return \Diadoc\Proto\Invoicing\Signers\ExtendedSignerDetails|null
      */
     public function getSignerDetails()
     {
         return $this->SignerDetails;
+    }
+
+    public function hasSignerDetails()
+    {
+        return isset($this->SignerDetails);
+    }
+
+    public function clearSignerDetails()
+    {
+        unset($this->SignerDetails);
     }
 
     /**

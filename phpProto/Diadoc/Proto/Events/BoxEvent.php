@@ -16,15 +16,15 @@ class BoxEvent extends \Google\Protobuf\Internal\Message
     /**
      * Generated from protobuf field <code>string EventId = 1;</code>
      */
-    private $EventId = '';
+    protected $EventId = '';
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Events.Message Message = 2;</code>
      */
-    private $Message = null;
+    protected $Message = null;
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Events.MessagePatch Patch = 3;</code>
      */
-    private $Patch = null;
+    protected $Patch = null;
 
     /**
      * Constructor.
@@ -66,11 +66,21 @@ class BoxEvent extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Events.Message Message = 2;</code>
-     * @return \Diadoc\Proto\Events\Message
+     * @return \Diadoc\Proto\Events\Message|null
      */
     public function getMessage()
     {
         return $this->Message;
+    }
+
+    public function hasMessage()
+    {
+        return isset($this->Message);
+    }
+
+    public function clearMessage()
+    {
+        unset($this->Message);
     }
 
     /**
@@ -88,11 +98,21 @@ class BoxEvent extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.Diadoc.Proto.Events.MessagePatch Patch = 3;</code>
-     * @return \Diadoc\Proto\Events\MessagePatch
+     * @return \Diadoc\Proto\Events\MessagePatch|null
      */
     public function getPatch()
     {
         return $this->Patch;
+    }
+
+    public function hasPatch()
+    {
+        return isset($this->Patch);
+    }
+
+    public function clearPatch()
+    {
+        unset($this->Patch);
     }
 
     /**
