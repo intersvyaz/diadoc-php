@@ -1,0 +1,35 @@
+syntax="proto3";
+
+package Diadoc.Proto;
+
+import "Timestamp.proto";
+import "TimeBasedFilter.proto";
+import "CustomDataItem.proto";
+
+message DepartmentFilter {
+	string DepartmentId = 1;
+	bool ExcludeSubdepartments = 2;
+}
+
+message GetDocumentsV4Request {
+	repeated string CounteragentBoxIds = 1;
+	repeated string FromDepartmentIds = 2;
+	repeated string ToDepartmentIds = 3;
+	repeated DepartmentFilter Departments = 4;
+	repeated string DocumentTypeNamedIds = 5;
+	string DocumentCategory = 6;
+	repeated string DocumentStatuses = 7;
+	repeated string FileNames = 8;
+	repeated string DocumentNumbers = 9;
+	optional string FromDocumentDate = 10;
+	optional string ToDocumentDate = 11;
+	optional Timestamp FromTimestamp = 12;
+	optional Timestamp ToTimestamp = 13;
+	repeated string TotalSums = 14;
+	optional string ToTotalSum = 15;
+	optional string FromTotalSum = 16;
+	repeated CustomDataItem CustomData = 17;
+	optional SortDirection SortDirection = 18;
+	optional int32 Count = 19;
+	optional string AfterIndexKey = 20;
+}

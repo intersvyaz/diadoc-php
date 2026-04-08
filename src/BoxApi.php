@@ -13,6 +13,7 @@ use Diadoc\Proto\Docflow\SearchDocflowsResponse;
 use Diadoc\Proto\Docflow\SearchScope;
 use Diadoc\Proto\DocumentId;
 use Diadoc\Proto\Documents\Document;
+use Diadoc\Proto\GetDocumentsV4Request;
 use Diadoc\Proto\Documents\DocumentList;
 use Diadoc\Proto\Events\BoxEvent;
 use Diadoc\Proto\Events\BoxEventList;
@@ -109,6 +110,14 @@ class BoxApi
     public function getDocuments(DocumentsFilter $documentsFilter = null, SortDirection $sortDirection = null, $afterIndexKey = null): DocumentList
     {
         return $this->diadocApi->getDocuments($this->boxId, $documentsFilter, $sortDirection, $afterIndexKey);
+    }
+
+    /**
+     * @throws DiadocApiException
+     */
+    public function getDocumentsV4(GetDocumentsV4Request $request): DocumentList
+    {
+        return $this->diadocApi->getDocumentsV4($this->boxId, $request);
     }
 
     /**

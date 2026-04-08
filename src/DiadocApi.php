@@ -34,6 +34,7 @@ use Diadoc\Proto\Events\MessagePatch;
 use Diadoc\Proto\Events\MessagePatchToPost;
 use Diadoc\Proto\Events\MessageToPost;
 use Diadoc\Proto\Forwarding\ForwardDocumentRequest;
+use Diadoc\Proto\GetDocumentsV4Request;
 use Diadoc\Proto\GetOrganizationsByInnListRequest;
 use Diadoc\Proto\GetOrganizationsByInnListResponse;
 use Diadoc\Proto\InvitationDocument;
@@ -283,6 +284,11 @@ class DiadocApi
      * @var string
      */
     final public const RESOURCE_GET_DOCUMENTS = '/V3/GetDocuments';
+
+    /**
+     * @var string
+     */
+    final public const RESOURCE_GET_DOCUMENTS_V4 = '/V4/GetDocuments';
 
     /**
      * @var string
@@ -1216,6 +1222,27 @@ class DiadocApi
             self::RESOURCE_GET_DOCUMENTS,
             [],
             $params
+        );
+
+        $documentList = new DocumentList();
+        $documentList->mergeFromString($response);
+
+        return $documentList;
+    }
+
+    /**
+     * @throws DiadocApiException
+     * @throws DiadocApiUnauthorizedException
+     */
+    public function getDocumentsV4(string $boxId, GetDocumentsV4Request $request): DocumentList
+    {
+        $response = $this->doRequest(
+            self::RESOURCE_GET_DOCUMENTS_V4,
+            $request->serializeToString(),
+            [
+                'boxId' => $boxId,
+            ],
+            self::METHOD_POST
         );
 
         $documentList = new DocumentList();
